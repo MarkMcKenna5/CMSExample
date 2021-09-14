@@ -1,6 +1,6 @@
 ---
 layout: layouts/affiliate.njk
-title: affiliate 2
+title: affiliate 1
 description: Get an exact price in seconds with Wrapmate.
 hidden: true
 navLogo:
