@@ -1,0 +1,212 @@
+@import '/css/shared/fonts.css';
+@import '/css/shared/colors.css';
+@import '/css/shared/backgrounds.css';
+/* modal__backdrop*/
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--modal-backdrop);
+}
+
+/* modal__body */
+.modal {
+  display: none;
+  z-index: var(--z-index-modal);
+}
+.modal__body {
+  max-width: 31rem;
+  max-height: 24rem;
+  padding: 5rem;
+  border-radius: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -12rem;
+  margin-left: -15.5rem;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn ease 0.5s;
+  -webkit-animation: fadeIn ease 0.5s;
+  -moz-animation: fadeIn ease 0.5s;
+  -o-animation: fadeIn ease 0.5s;
+  -ms-animation: fadeIn ease 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.modal__body-sm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -13.75rem;
+  margin-left: -15.625rem;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 31rem;
+}
+.modal__body-sm > p,
+.modal__body-sm > h2 {
+  width: min(100%, 17rem);
+}
+.modal__body-lg {
+  position: fixed;
+  top: 24%;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-height: 20rem;
+  width: 25rem;
+  background: var(--vape);
+}
+
+/* modal content */
+.modal-content-div {
+  max-width: 21.5rem;
+}
+.modal-content-div p {
+  margin-bottom: 1.5rem;
+}
+.modal-content-div a {
+  display: inline-flex;
+  color: var(--blue);
+}
+.text-center {
+  text-align: center;
+}
+.center {
+  align-items: center;
+}
+.modal__body ul li {
+  margin-bottom: 0.5rem;
+}
+.modal__body ul li::before {
+  content: url('/assets/payment-check.svg');
+  margin-right: 0.44rem;
+}
+.modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background: url('/assets/icons/x-close.svg');
+}
+/* pro_forms we have u modal */
+#smaller {
+  font-size: 0.75rem;
+}
+
+/* landing page iframe modals */
+.modal__body-yt {
+  position: fixed;
+  top: 20%;
+  bottom: 20%;
+  left: 16%;
+  right: 10%;
+  max-width: max(67%, 80rem);
+  z-index: 2;
+}
+.modal__body-yt iframe {
+  width: 100%;
+  height: 100%;
+}
+.modal__body-yt .modal__close {
+  top: 1.5rem;
+  right: 6rem;
+  width: 2rem;
+  height: 2rem;
+  background: url('/assets/icons/x-close-lg.svg');
+}
+
+/* calculating modal */
+.calculate {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--vape);
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+  z-index: var(--z-index-modal);
+}
+#modalCalculate h2 {
+  text-align: center;
+}
+.calculate > img,
+.calculate > h2 {
+  margin: 0 auto;
+}
+
+/* @media views */
+@media (max-width: 430px) {
+  .modal__body-lg {
+    width: 22rem;
+  }
+}
+@media (max-width: 500px) {
+  .modal__body-yt {
+    left: 0;
+    width: 100%;
+    z-index: var(--z-index-modal);
+  }
+
+  .modal__body-sm {
+    top: 51%;
+    bottom: 31%;
+    left: 70%;
+    width: 20rem;
+  }
+  .modal__body-yt {
+    left: 0;
+    min-width: 100%;
+  }
+  .modal__body-yt .modal__close {
+    top: 2.5rem;
+    right: 1.25rem;
+  }
+}
+@media (max-width: 640px) {
+  .modal__body {
+    max-width: 20.5rem;
+    max-height: 21rem;
+    padding: 3rem 1.5rem;
+    margin-top: -10.5rem;
+    margin-left: -10.25rem;
+  }
+  .modal-content-div h2 {
+    margin: 0.6rem 0 0.5rem 0;
+  }
+  .modal-content-div p {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 425px) {
+  .modal__body-sm {
+    top: 51%;
+    bottom: 31%;
+    left: 72%;
+    width: 20rem;
+  }
+}
+@media (max-width: 375px) {
+  .modal__body-sm {
+    top: 45%;
+    bottom: 31%;
+    left: 74%;
+    width: 20rem;
+  }
+}

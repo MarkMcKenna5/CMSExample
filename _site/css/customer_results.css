@@ -1,0 +1,120 @@
+.customer-results {
+    position: relative;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.customers-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: calc((100% - 21.25rem)/2);
+    top: 37%;
+    position: absolute;
+    text-align: center;
+    width: 21.25rem;
+}
+
+.customers__image {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: min(100%, 48rem);
+    height: 19rem;
+    background: url('/assets/webp/suntown-sparkling-story.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 5rem;
+}
+
+.button__video-light {
+    color: var(--white);
+    font-weight: 700;
+    font-family: 'Avenir Next', sans-serif;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.button__video-light::after {
+    content: url('/assets/icons/video-button-play-light.svg');
+    margin-left: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .customer-results {
+        height: 50rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .customers-dialog {
+        align-items: flex-start;
+        left: 7%;
+        top: 13%;
+        text-align: left;
+        width: 28rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .customers__image {
+        align-items: flex-end;
+        left: 30%;
+        height: 36rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .customer-results {
+        height: 40rem;
+    }
+    .customers-dialog {
+        align-items: flex-start;
+        left: 9%;
+        top: 20%;
+        text-align: left;
+        width: 20rem;
+        padding: 1rem;
+    }
+    .customers__image {
+        left: 25%;
+        min-height: 28rem;
+        width: 35rem;
+        background-size: cover;
+        padding: 2rem;
+    }
+    .customers__image button {
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .customer-results {
+        display: flex;
+        justify-content: center;
+        min-height: 40rem;
+    }
+    .customers__image {
+        left: auto;
+        top: auto;
+        position: relative;
+    }
+    .customers-dialog {
+        text-align: center;
+        padding: 2rem 2rem;
+        top: 40%;
+        left: auto;
+    }
+    .customers__image {
+        min-height: 20rem;
+        width: 95%;
+    }
+    .customers__image button {
+        margin: 0 0 3rem 8rem;
+        width: 20rem;
+    }
+}

@@ -1,0 +1,46 @@
+@import '/css/template-fragments/satisfaction-section.css';
+@import '/css/template-fragments/why-wrap-section.css';
+
+.pricing-page-main {
+  width: 100%;
+  background: var(--white);
+}
+#card-list-background-black {
+  background: linear-gradient(180deg, #3e454b 0%, #202020 100%);
+  border-radius: 12.5rem 0 0 0;
+}
+#card-list-background-black h1 {
+  color: var(--white);
+}
+.background-color-holder {
+  background: #f4f8fe;
+}
+.pricing-page-main .how-it-works-desktop {
+  margin: 5rem auto 0 auto;
+}
+@media (max-width: 1032px) {
+  .pricing-page-main .card-image-section-left {
+    margin-top: 10rem;
+  }
+  .pricing-page-main .how-it-works-tablet {
+    margin: 5rem 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .pricing-page-main .img-cta {
+    margin-top: 0;
+  }
+}
+@media (max-width: 665px) {
+  .pricing-page-main .how-it-works-mobile {
+    margin: 2rem 0 0 0;
+  }
+}
+@media (max-width: 640px) {
+  .pricing-page-main .img-cta {
+    margin-top: 18rem;
+  }
+  .pricing-page-main .card-image-section-left {
+    margin-bottom: 8rem;
+  }
+}

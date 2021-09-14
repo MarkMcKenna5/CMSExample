@@ -1,0 +1,234 @@
+@import '/css/shared/fonts.css';
+@import '/css/shared/colors.css';
+@import '/css/shared/backgrounds.css';
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* header + padding */
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  min-height: 45rem;
+  margin-bottom: 5rem;
+}
+
+.headerBlock {
+  color: var(--white);
+  text-shadow: 0px 4px 10px var(--text-shadow);
+  max-width: 31rem;
+  letter-spacing: -0.02rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 120%;
+}
+.headerBlockSubtitle {
+  color: var(--white);
+  text-shadow: 0px 4px 10px var(--text-shadow);
+  max-width: 33rem;
+  letter-spacing: -0.02rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+.headerBlockBlack {
+  color: var(--char);
+  max-width: 33rem;
+  letter-spacing: -0.02rem;
+  text-align: center;
+}
+
+.subtitleBlockBlack {
+  font-size: 1.5rem;
+}
+
+.heroHeaderSide {
+  color: var(--char);
+  max-width: 33rem;
+  letter-spacing: -0.02rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.heroHeaderSideTextStart {
+  color: var(--char);
+  max-width: 33rem;
+  letter-spacing: -0.02rem;
+  text-align: start;
+}
+.heroHeaderSideWhite {
+  color: var(--white);
+  max-width: 33rem;
+  letter-spacing: -0.02rem;
+  text-align: start;
+  margin-bottom: 2.5rem;
+}
+
+.heroSubtitleSide {
+  color: var(--ash);
+  letter-spacing: -0.02rem;
+  text-align: start;
+  margin-bottom: 2.5rem;
+  max-width: 36.75rem;
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.hero__content-wrapper, .heroContentBottom {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heroContentBottom {
+  margin-top: 27rem;
+}
+
+.heroContentSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 64.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.hero__image {
+  width: 100%;
+  min-height: 45rem;
+  object-fit: cover;
+}
+
+.alternateHero {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 7.5rem auto 0 auto;
+}
+.alternateHero h1 {
+  margin-bottom: 0.5rem;
+}
+.alternateHeroContent {
+  width: 29.25rem;
+  margin-left: 13rem;
+}
+.alternateHeroContentMobile {
+  display: none;
+}
+
+.designProcessDisclaimer::before,
+.designProcessDisclaimerMobile::before {
+  content: url('/assets/icons/payment-check-gray-md.svg');
+  margin-right: 0.75rem;
+}
+.designProcessDisclaimerMobile {
+  display: flex;
+}
+@media (min-width: 1440px) {
+  .hero img {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .heroContentSide {
+    align-items: center;
+  }
+  .heroSubtitleSide {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 31.5rem;
+  }
+  .headerBlockBlack {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__content-wrapper {
+    padding: 0 1.5rem;
+  }
+  .heroContentSide,
+  .heroHeaderside {
+    align-items: center;
+  }
+  .heroHeaderSide {
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroSubtitleSide {
+    font-size: 1rem;
+    max-width: 19rem;
+  }
+  .headerBlockSubtitle,
+  .subtitleBlockBlack {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  .headerBlockBlack,
+  .headerBlock {
+    font-size: 2rem;
+  }
+  /* .heroFocusLeft {
+    margin-left: 20rem;
+  } */
+}
+.hero__video {
+  position: absolute;
+  top: 0;
+  height: 45rem;
+  object-fit: cover;
+}
+@media (min-width: 1250px) {
+  .hero__video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1439px) {
+  .alternateHero {
+    flex-direction: column;
+    margin: 9.5rem 0 0 0;
+  }
+  .alternateHeroContent {
+    margin-left: 0;
+    text-align: center;
+    width: 37rem;
+  }
+  .disclaimer {
+    display: none;
+  }
+  .alternateHeroImg {
+    margin-top: 3.5rem;
+  }
+}
+@media (max-width: 708px) {
+  .alternateHero {
+    margin: 2rem 0 0 0;
+  }
+  .alternateHero h1 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+  .alternateHero button {
+    width: 100%;
+  }
+  .alternateHeroContent {
+    display: none;
+  }
+  .alternateHeroContentMobile {
+    display: block;
+    width: 22rem;
+    padding: 0 1.5rem;
+  }
+}

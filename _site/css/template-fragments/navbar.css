@@ -1,0 +1,172 @@
+@import '/css/shared/fonts.css';
+@import '/css/shared/colors.css';
+@import '/css/shared/backgrounds.css';
+
+.landingHeader {
+  width: 100%;
+  z-index: 9999;
+  position: absolute;
+}
+/* desktop-nav */
+#desktop-nav {
+  max-width: 64.5rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  margin-top: 0.375rem;
+}
+#desktop-nav ul {
+  width: 28.375rem;
+  display: flex;
+  justify-content: space-between;
+}
+#desktop-nav li {
+  color: var(--white);
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+#desktop-nav a:hover {
+  color: var(--blue);
+}
+.bold-text {
+  font-family: 'Avenir Next Bold';
+  color: var(--char);
+}
+.mobile-nav-menu-icon {
+  display: none;
+}
+.nav-link-color-ash {
+  color: var(--ash) !important;
+}
+#desktopScheduleCall {
+  width: 10.25rem;
+  border-radius: 0.5rem;
+  height: 3.5rem;
+}
+.stickyNav {
+  background-color: var(--white);
+  box-shadow: 0px 6px 16px -2px rgba(0, 122, 255, 0.1);
+  position: fixed;
+  top: 0;
+}
+.stickyNavLogoBlue {
+  content: url('/assets/nav/logo-blue.svg') !important;
+}
+.stickyNavLinkAsh {
+  color: var(--ash) !important;
+}
+.stickyNavBtn {
+  color: var(--blue) !important;
+}
+.stickyNavMenuIcon {
+  content: url('/assets/nav/nav-menu-list-ash.svg') !important;
+}
+/* mobile nav */
+.mobile-nav-bg-overlay {
+  position: absolute;
+  height: 100vh;
+  width: 0;
+  top: 0;
+  right: -100%;
+  overflow: hidden;
+  z-index: 9999;
+}
+.easeIn {
+  right: 0;
+  width: 100vw;
+  transition: 0.35s ease;
+}
+.easeOut {
+  right: -100%;
+  transition: 0.45s ease;
+}
+#mobile-nav {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  z-index: 9999;
+  flex-direction: column;
+  align-items: flex-end;
+  background: rgba(182, 194, 206, 0.6);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+}
+#mobile-nav img {
+  margin: 1.875rem 1.875rem;
+  content: url('/assets/nav/mobile-nav-close-icon.svg');
+}
+#mobile-nav ul {
+  width: 18.853rem;
+  height: 24.125rem;
+  position: absolute;
+  top: 8rem;
+  right: 2.25rem;
+  text-transform: capitalize;
+}
+#mobile-nav li {
+  font-family: 'GT Walsheim Bold';
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--white) !important;
+  text-align: right;
+  margin: 0 0 1.5rem;
+}
+#mobile-nav button {
+  padding: 1.1rem 1rem 1rem;
+  position: absolute;
+  width: 12.25rem;
+  height: 3.5rem;
+  bottom: 15%;
+  right: 2.25rem;
+  border-radius: 0.5rem;
+  font-family: 'Avenir Next Bold';
+}
+.disable-scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* mobile view */
+@media (min-width: 901px) {
+  .mobile-nav-bg-overlay {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  #desktop-nav li,
+  #desktopScheduleCall {
+    display: none;
+  }
+  #desktop-nav {
+    padding: 2rem 2rem;
+  }
+  .mobile-nav-menu-icon {
+    display: flex;
+    padding-bottom: 0.5rem;
+  }
+  #mobile-nav {
+    width: 44rem;
+  }
+}
+@media (max-width: 768px) {
+  #mobile-nav {
+    width: 39.688rem;
+  }
+}
+@media (max-width: 640px) {
+  #desktop-nav {
+    padding: 2rem 1.5rem;
+  }
+  #mobile-nav {
+    width: 22rem;
+  }
+}

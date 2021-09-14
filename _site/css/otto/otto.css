@@ -1,0 +1,155 @@
+body {
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+  font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  overscroll-behavior: none;
+}
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+span[validity='pending']::before {
+  content: '⏱️';
+}
+span[validity='true']::before {
+  content: '✔️';
+}
+span[validity='false']::before {
+  content: '⛔';
+}
+span[validity='warn']::before {
+  content: '⚠️';
+}
+input[validity='pending'] + span::before {
+  content: '⏱️';
+}
+input[validity='true'] + span {
+  color: green;
+}
+input[validity='true'] + span::before {
+  content: '✔️';
+}
+input[validity='false'] + span {
+  color: red;
+}
+input[validity='false'] + span::before {
+  content: '⛔';
+}
+input[validity='warn'] + span {
+  color: goldenrod;
+}
+input[validity='warn'] + span::before {
+  content: '⚠️';
+}
+.imagePreview[validity='pending']::before {
+  content: '⏱️';
+}
+.imagePreview[validity='pending'] > input {
+  visibility: hidden;
+}
+.imagePreview[validity='true'] > input {
+  visibility: hidden;
+}
+.imagePreview[validity='true']::before {
+  content: '✔️';
+}
+.imagePreview[validity='false']::before {
+  content: '⛔';
+}
+
+header {
+  grid-column: 1 / 13;
+  grid-row: 1;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(207, 232, 220);
+  border: 2px solid rgb(79, 185, 227);
+}
+.backAndCancelButtons {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-gap: 20px;
+}
+.dataFields {
+  display: flex;
+  flex-direction: column;
+  grid-column: 4 / 13;
+  grid-row: 2;
+}
+
+.dataField {
+  flex: 1;
+  align-items: center;
+  display: flex;
+}
+.fieldError {
+  flex: 2;
+  margin-left: 5px;
+}
+.fieldLabel {
+  flex: 1;
+  text-align: right;
+}
+.fieldItem {
+  margin-left: 5px;
+  flex: 1;
+}
+#addTag {
+  display: flex;
+}
+#addTag > button {
+  width: 30px;
+}
+#addTag > input {
+  width: 80px;
+}
+#tagList {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+}
+#vehicleImages {
+  grid-column: 1 / 13;
+  grid-row: 3;
+}
+#tagsForm {
+  grid-column: 1 / 4;
+  grid-row: 2;
+}
+.imagePreview {
+  background-color: gray;
+  width: 16rem;
+  height: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+input[type='file'] {
+  height: 0;
+  padding: 0;
+  opacity: 0;
+}
+.imageList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imagePreviewlabel {
+  color: white;
+}

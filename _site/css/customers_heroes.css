@@ -1,0 +1,49 @@
+.customers-heroes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.customers__content-wrapper {
+    position: absolute;
+    width: min(100%, 31.5rem);
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .customer__video {
+        width: 100%;
+    }
+}
+
+.customers__overlay-top,
+.customers__overlay-bottom {
+    background: linear-gradient(180deg, var(--off-white) 0%, var(--gradient-end) 97.69%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.customers__overlay-bottom {
+    transform: rotate(-180deg);
+}
+
+.button__video {
+    font-weight: 700;
+    font-family: 'Avenir Next', sans-serif;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.button__video::after {
+    content: url('/assets/icons/video-button-play-dark.svg');
+    margin-left: 1rem;
+}

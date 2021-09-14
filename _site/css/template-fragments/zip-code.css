@@ -1,0 +1,82 @@
+@import '/css/shared/fonts.css';
+@import '/css/shared/colors.css';
+@import '/css/shared/backgrounds.css';
+@import '/css/map.css';
+@import '/css/shared/backgrounds.css';
+
+.rounded-box {
+  border-radius: 1rem;
+}
+
+.hero-zip-code-section {
+  height: 40rem;
+  background-color: var(--white);
+  position: relative;
+  width: 100%;
+}
+.zip-code-img {
+  background-position: center;
+  height: 40rem;
+  width: 100%;
+}
+#city-page-main .zip-code-img,
+.locations-page-main .zip-code-img,
+#industry-page-template-main .zip-code-img {
+  object-fit: cover;
+}
+.content-container {
+  position: absolute;
+  max-width: 64.5rem;
+  top: 14rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.content-text-container {
+  width: 31.5rem;
+  margin: auto;
+  text-align: center;
+}
+.content-text-container h1 {
+  line-height: 120%;
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+}
+.content-text-container .caption {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+}
+.zip-text-white {
+  color: var(--white);
+}
+#locations-page-content-container h1::after {
+  content: 'Based in Denver with a nationwide network of local Pros in every major market.';
+}
+
+@media (max-width: 768px) {
+  #locations-page-content-container h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 640px) {
+  .content-text-container {
+    width: 19rem;
+  }
+  .content-text-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .hero-zip-code-section .caption {
+    font-size: 1rem;
+    margin: 0;
+  }
+  #locations-page-content-container h1 {
+    visibility: hidden;
+  }
+  #locations-page-content-container h1::after {
+    visibility: visible;
+    content: 'Based in Denver with a nationwide network of local Pros.';
+  }
+}

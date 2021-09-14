@@ -1,0 +1,248 @@
+@import '/css/shared/fonts.css';
+@import '/css/shared/colors.css';
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Avenir Next', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  background: var(--vape);
+}
+
+h1,
+h2 {
+  font-family: 'GT Walsheim Bold';
+  font-weight: bold;
+  color: var(--char);
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: -0.02rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 150%;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+#customerContainer {
+  margin: 0 2.5rem 0 0;
+}
+
+#priceContainer {
+  margin: 3rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0 .75rem;
+}
+
+input {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.5rem;
+  height: 3rem;
+  color: var(--char);
+  width: 70%;
+  background: var(--white);
+  font-size: 1.25rem;
+  border: none;
+  border-radius: .75rem;
+  margin-top: .85rem;
+}
+
+.textArea {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  line-height: 1.25rem;
+  color: var(--char);
+  width: 80%;
+  background: var(--white);
+  font-size: 1rem;
+  border: none;
+  margin-right: .5rem;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 50rem;
+  min-height: 5rem;
+  border: 2px solid var(--smoke);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  background: var(--white);
+  border-radius: .75rem;
+  box-shadow: 2px 2px var(--box-shadow);
+}
+
+#optionContainer {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 1rem 1rem;
+  background: var(--white);
+  width: 50rem;
+  border: 2px solid var(--smoke);
+  border-radius: .75rem;
+  box-shadow: 2px 2px var(--box-shadow);
+}
+
+.row1, .row2 {
+  display: flex;
+  border-bottom: 1px solid var(--smoke);
+}
+
+.priceLabel {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.priceInput {
+  width: 6rem;
+  margin-left: 3rem;
+}
+
+main {
+  width: 100%;
+  min-height: 10%;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.chosen {
+  background: var(--color-valid)
+}
+
+.chosenInput {
+  background: var(--vape)
+}
+
+@media (max-width: 1660px) {
+  #mainContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  #customerContainer {
+    margin: 0 0 0 0;
+  }
+  .priceInput {
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 880px) {
+  label {
+    font-size: 1rem;
+    margin: 1.5rem 1rem 0 .75rem;
+  }
+  fieldset {
+    width: 30rem;
+  }
+  input {
+    width: 20rem;
+    font-size: .9rem;
+  }
+  #optionContainer {
+    width: 30rem;
+    grid-template-columns: 50% 50%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  main {
+    padding: 0;
+  }
+  .priceInput {
+    margin-left: 2rem;
+  }
+  .priceLabel {
+    font-size: 1rem;
+  }
+  .textArea {
+    font-size: .75rem;
+    letter-spacing: .05rem;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 510px) {
+  label {
+    font-size: .75rem;
+  }
+  fieldset {
+    width: 22rem;
+  }
+  input {
+    width: 14rem;
+    font-size: .75rem;
+  }
+  #optionContainer {
+    width: 22rem;
+    grid-template-columns: 50% 50%;
+    padding: 0 0;
+  }
+  .priceInput {
+    width: 4rem;
+  }
+  .textArea {
+    font-size: .7rem;
+    letter-spacing: .05rem;
+    line-height: 1rem;
+  }
+}
+
+
+/* hiding the arrows for number inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+*:focus {
+  outline: 0;
+}

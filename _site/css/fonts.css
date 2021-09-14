@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'GT Walsheim Regular';
+    src: URL('/fonts/gt-walsheim/GT-Walsheim-Regular.ttf') format('truetype'), url('/fonts/gt-walsheim/GT-Walsheim-Regular.woff') format('woff');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Bold';
+    src: URL('/fonts/gt-walsheim/GT-Walsheim-Bold.ttf') format('truetype'), url('/fonts/gt-walsheim/GT-Walsheim-Bold.woff') format('woff'), url('/fonts/gt-walsheim/GT-Walsheim-Bold.woff2') format('woff2');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('/fonts/avenir/AvenirNext-Regular.woff2') format('woff2');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Avenir Next Bold';
+    src: url('/fonts/avenir/AvenirNext-Bold.woff2') format('woff2');
+    font-display: fallback;
+}

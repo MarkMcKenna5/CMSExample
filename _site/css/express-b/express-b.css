@@ -1,0 +1,439 @@
+html,
+body {
+  overscroll-behavior: none;
+}
+.loading-b {
+  padding-top: 0;
+}
+
+.bg-van-b {
+  background-image: url('/assets/category-van-b.png');
+}
+
+.bg-trailer-b {
+  background-image: url('/assets/category-trailer-b.png');
+}
+
+.bg-other-b {
+  background-image: url('/assets/category-motorcycle-b.png');
+}
+
+.bg-multiple-van-b {
+  background-image: url('/assets/category-multiple-van-b.png');
+}
+
+#van-top,
+#multiple-van,
+#bg--trailer-b,
+#bg--other-b {
+  grid-column: span 2;
+  width: 100%;
+  height: 17rem;
+}
+
+.vehicleSchedule {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+.vehicleSchedule a {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.multiple-vehicle-main {
+  grid-template-columns: none;
+  width: 26rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.multiple-vehicle-main h1 {
+  width: 27rem;
+}
+.multiple-vehicle-main a {
+  width: 26rem;
+  margin-top: 3.5rem;
+}
+
+/* Logo */
+
+.designPackageModal {
+  display: none;
+  width: min(100%, 90rem);
+  height: 100%;
+  grid-template-columns: 50% 50%;
+  padding: 0 6.5rem 0 12rem;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .designPackageModal {
+    padding: 11rem 2.5rem 0;
+    grid-template-columns: 50%;
+    height: auto;
+  }
+}
+@media (max-width: 640px) {
+  .designPackageModal {
+    grid-template-columns: 100%;
+    padding: 0 2rem;
+    min-height: auto;
+  }
+}
+.design-packages img {
+  width: 5rem;
+  position: static;
+}
+.design-packages h3 {
+  text-align: center;
+  line-height: 150%;
+  font-size: 1rem;
+  color: var(--ash);
+}
+
+.logoImgContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: 13rem;
+}
+
+.logoText {
+  margin-bottom: 1.75rem;
+  letter-spacing: 0px;
+}
+.logoImg {
+  margin-bottom: 5rem;
+}
+.logoImgPen {
+  max-height: 5rem;
+  margin-bottom: 5rem;
+}
+.logoImgTruck {
+  margin-bottom: 4rem;
+}
+
+#selectDesignPackage {
+  padding-top: 1.5rem;
+}
+
+.selectDesignPackage p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--char);
+  margin-top: 0.5rem;
+}
+
+/* impact screen */
+
+.impact__cost-wrapper-b {
+  width: 46.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3rem;
+}
+
+.impactModal {
+  display: none;
+}
+
+.modalCloseButton {
+  width: 17.438rem;
+}
+
+.howItWorksButton {
+  width: 10.75rem;
+  min-height: 2.5rem;
+  background: var(--vape);
+  border-radius: 1.5rem;
+  border: none;
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  cursor: pointer;
+  color: var(--blue);
+  font-size: 1rem;
+  padding: 0.5rem 0.25rem 0.5rem 1.25rem;
+}
+.impactDisclaimer-b {
+  display: flex;
+}
+.impactDisclaimer-b::before {
+  content: '$';
+  font-size: 0.75rem;
+}
+.impactModalPrice::before {
+  content: '$';
+  font-size: 0.75rem;
+  margin-top: 0.05rem;
+}
+
+.impactModalContentContainer {
+  display: flex;
+  flex-direction: row;
+}
+.impactModalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem 0 0 1rem;
+  text-align: start;
+  max-height: 17rem;
+  min-height: 19rem;
+}
+.impactModal p {
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.impactModal h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+}
+.impactModal h2 {
+  margin: 1rem 8rem 0 0;
+}
+.impactModal img {
+  margin-bottom: 2.5rem;
+}
+#impactModal {
+  top: 41.5%;
+  min-height: 37rem;
+  z-index: var(--z-index-modal);
+}
+.submitPurchase-b .paymentName {
+  margin-bottom: 1.5rem;
+}
+.cart-img-b {
+  box-shadow: none;
+}
+.cart-button-b {
+  margin-top: 2.5rem;
+}
+
+.design-detail-list-b {
+  max-height: 8.7rem;
+}
+
+.flex-wrapper-b {
+  margin-top: 0.1rem;
+}
+
+.scrollListB {
+  padding-bottom: 10rem;
+}
+
+@media (max-height: 900px) {
+  #impactModal {
+    bottom: 21%;
+  }
+}
+.impactH31 {
+  margin-top: 0.9rem;
+}
+.impactH32 {
+  margin-top: 0.55rem;
+}
+.impactH33 {
+  margin-top: 0.85rem;
+}
+.impactModalBackdrop {
+  z-index: var(--z-index-modal);
+}
+.impact__cost-wrapper-b button {
+  display: block;
+}
+
+.order-summary-mobile,
+#cartMobileHeading {
+  display: none;
+}
+
+.form__saveUser-b {
+  min-height: 20.2rem;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+}
+.paymentOptions-b {
+  min-height: 11.125rem;
+  justify-content: space-between;
+  margin: 2rem 0 2rem 0;
+}
+.paymentHeading {
+  margin-top: -2rem;
+}
+.trust-b {
+  margin: 1.5rem 0;
+}
+.stripeLogo {
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 688px) {
+  .selectDesignPackage p {
+    font-size: 0.75rem;
+    margin-top: 0;
+  }
+}
+@media (max-width: 640px) {
+  .multiple-vehicle-main,
+  .multiple-vehicle-main a,
+  .multiple-vehicle-main h1 {
+    width: 20rem;
+  }
+  .multiple-vehicle-main a {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3.5rem;
+  }
+  #order-items-mobile-container-b {
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
+  }
+  #order-items-mobile-container-b .order-items-mobile-detail {
+    align-items: center;
+    margin-top: 0;
+  }
+  #cart-item-img-mobile-b {
+    top: 1rem;
+  }
+  .order-summary-mobile,
+  .cart-heading-mobile {
+    display: block;
+  }
+  .order-summary-desktop,
+  .cart-heading-desktop {
+    display: none;
+  }
+  #cartDesktopHeading {
+    display: none;
+  }
+  #cartMobileHeading {
+    display: block;
+    text-align: start;
+    margin: 1.5rem 0;
+  }
+  .cart-button-b {
+    margin-top: 1rem;
+  }
+  .logoText {
+    margin-bottom: 1.5rem;
+  }
+  .logoImg {
+    margin-bottom: 4rem;
+  }
+  .logoImgPen {
+    max-height: 5rem;
+    margin-bottom: 4rem;
+  }
+  .logoImgTruck {
+    margin-bottom: 3rem;
+  }
+  #impactModal {
+    min-height: 34rem;
+    max-width: 23rem;
+    margin-left: -11.5rem;
+  }
+}
+
+@media (min-width: 500px) {
+  #impactModal {
+    padding: 4rem;
+  }
+  .impactModal h2 {
+    margin: 0 0 1rem 0;
+  }
+  .impactModalContent {
+    width: 18rem;
+    margin: 1rem 0 2rem 1rem;
+  }
+  .howItWorksButton {
+    margin: 2rem 1rem 2.5rem 1rem;
+  }
+  .impact__cost-wrapper-b {
+    width: auto;
+  }
+  .impactModal p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .impactH32 {
+    margin-top: 0;
+  }
+  .impactH33 {
+    margin-top: -0.5rem;
+  }
+  .impactModal img {
+    margin-bottom: 4.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #impactModal {
+    min-height: 31rem;
+    max-width: 23rem;
+    margin-left: -15.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .impact__cost-wrapper-b {
+    width: 20.438rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 1.5rem 0;
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .content__center-b form {
+    width: 26rem;
+  }
+}
+@media (max-width: 450px) {
+  .vehicleInfoB {
+    display: none;
+  }
+  .accountHeading {
+    margin: 0 8.5rem 1.5rem 0;
+  }
+  .design-packages {
+    max-height: 13rem;
+  }
+
+  .design-packages img {
+    width: 5rem;
+    position: static;
+  }
+  .design-packages h3 {
+    text-align: center;
+    line-height: 150%;
+  }
+}
+@media (min-width: 1440px) {
+  .selectDesignPackage p {
+    margin-right: 3.75rem;
+  }
+}
+
+@media (min-width: 927px) {
+  .checkout-overview-container {
+    position: fixed;
+  }
+  .checkout-overview-b {
+    padding-top: 8rem;
+  }
+}
+@media (min-width: 1024px) {
+  #selectDesignPackage {
+    padding-top: 12.25rem;
+  }
+  .loading-b {
+    padding-top: 15rem;
+  }
+}
+@media (max-width: 900px) {
+  .order-summary-container-b {
+    margin-top: 1.5rem;
+  }
+}

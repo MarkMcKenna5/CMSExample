@@ -1,0 +1,242 @@
+/* Design packages */
+
+.design-package-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  height: auto;
+  margin-top: 5rem;
+}
+
+.design-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.design-header h1 {
+  width: auto;
+}
+
+.design-header p {
+  width: 31.5rem;
+}
+
+.design-package-choices {
+  width: min(100%, 56rem);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.zippy {
+  display: flex;
+}
+
+.design-only-details,
+.design-logo-details {
+  display: none;
+  max-height: 10rem;
+}
+
+.details-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 1.11rem;
+}
+
+.details-header-logo {
+  margin-top: 2.5rem;
+}
+
+.design-package {
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 2rem -0.25rem var(--box-shadow);
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  width: 26rem;
+  margin-bottom: 2rem;
+}
+#price-design-only {
+  margin-top: 2.2rem;
+}
+#price-design-only-p {
+  margin-top: 0.25rem;
+}
+.design-package h3 {
+    font-family: 'Avenir Next Bold';
+    font-size: 1rem;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #202020;
+}
+
+.design-package ul li {
+  margin-bottom: 0.5rem;
+}
+
+.design-package ul li::before {
+  content: url('/assets/icons/payment-check.svg');
+  margin-right: 0.44rem;
+}
+
+.best {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--blue);
+    margin-bottom: -1rem;
+}
+
+.design-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -1rem;
+  overflow: hidden;
+  max-height: 10rem;
+  width: 23rem;
+}
+
+.vehicleImg {
+  height: 9.375rem;
+  width: 20.313rem;
+  margin-top: -1rem;
+  object-fit: cover;
+}
+
+.vehicleImgSm {
+  height: 13.688rem;
+  width: 15.938rem;
+  object-fit: cover;
+}
+
+.trailerImg {
+  margin: -1rem -3rem 0 -1rem;
+  min-height: 9rem;
+  height: 8.75rem;
+  width: 21.875rem;
+  object-fit: cover;
+}
+
+.trailerImgSm {
+  margin: -1.15rem -3rem 0 -2rem;
+  min-height: 10.5rem;
+  width: 18.75rem;
+}
+
+.zippy {
+  margin-left: -0.5rem;
+}
+
+@media (max-width: 920px) {
+  .design-header {
+    width: auto;
+  }
+  .design-package-choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 26rem;
+  }
+  .design-package {
+    width: 20.4rem;
+    padding: 2rem 1rem 0 1rem;
+    min-height: 29rem;
+    max-height: 50rem;
+    margin-right: 1rem;
+  }
+  .details-header-logo {
+    margin: 2.5rem 0 -0.3rem 0;
+  }
+  .details-header-only {
+    margin-top: 1.5rem;
+  }
+  .full__page p h1,
+  .header {
+    width: auto;
+  }
+  .price-design-only {
+    margin: 0;
+  }
+  .best {
+    margin-top: -1rem;
+  }
+  .vehicleImg {
+    height: 14.375rem;
+    width: 18.75rem;
+  }
+  .vehicleImgSm {
+    height: 9.375rem;
+    width: 13rem;
+  }
+  .zippy {
+    margin-left: -1rem;
+  }
+  .design-image-container {
+    max-height: 8rem;
+    width: 19rem;
+  }
+  .trailerImg {
+    margin: -1.15rem -1rem 0 -1rem;
+    min-height: 9.625rem;
+    width: 18.75rem;
+  }
+  .trailerImgSm {
+    margin: -1.15rem -1rem 0 -1rem;
+    min-height: 9.375rem;
+    width: 14.375rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .design-package-choices {
+    flex-direction: column;
+    align-items: center;
+  }
+  .design-package {
+    margin-right: 0;
+  }
+  .design-header h1 {
+    font-size: 2rem;
+    width: auto;
+  }
+  .design-header p {
+    width: auto;
+  }
+  .design-package-main {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .design-package-main {
+    margin-top: 0;
+  }
+  .design-header {
+    text-align: left;
+  }
+  #price-design-only {
+    margin-top: 0;
+  }
+}
+@media (max-width: 450px) {
+  .vehicleImg {
+    height: 9.375rem;
+  }
+}

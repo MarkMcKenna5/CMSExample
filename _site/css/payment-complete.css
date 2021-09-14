@@ -1,0 +1,109 @@
+.payment-complete-header {
+  width: min(100%, 68rem);
+  margin-right: 2rem;
+  background: var(--vape);
+  height: 3.5rem;
+}
+
+.payment-complete-header .callout {
+  margin: 1.625rem;
+}
+
+.payment-complete-header img {
+  margin-top: 1.5rem;
+}
+#payment-complete-main h3 {
+  font-family: 'Avenir Next Bold';
+}
+
+#payment-complete-main {
+  grid-template-columns: none;
+  padding: 0 1.5rem 0 1.5rem;
+  height: 100%;
+}
+#payment-complete-copy {
+  margin-left: auto;
+  margin-right: auto;
+}
+#payment-complete-script {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/* Payment Success */
+
+.payment__success {
+  display: grid;
+  color: var(--char);
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  gap: 1rem 0.25rem;
+  /* font-size: 0.75rem; */
+  margin-bottom: 2rem;
+}
+.payment__success .price {
+  text-align: right;
+}
+.payment__success h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+.payment__success p {
+  margin: 0;
+  font-size: 1rem;
+}
+.payment-complete-summary {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+#orderNumber {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.payment__grid-full-row {
+  grid-column: 1 / 3;
+  font-size: 1rem;
+}
+#payment-complete-breakdown {
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#paidToday {
+  font-size: 0.75rem;
+  text-transform: none;
+  line-height: 150%;
+  color: var(--ash);
+  letter-spacing: normal;
+  font-weight: 400;
+}
+#designLabelPaymentComplete {
+  font-family: 'Avenir Next Bold';
+  font-size: 0.75rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  color: var(--char);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+@media (max-width: 640px) {
+  #payment-complete-main {
+    height: auto;
+  }
+}
+@media (max-width: 1450px) {
+  .payment-complete-header {
+    width: min(75%, 68rem);
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .payment-complete-header {
+    width: min(95%, 90rem);
+  }
+}

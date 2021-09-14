@@ -1,0 +1,45 @@
+/* calculating modal */
+.calculate {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--vape);
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    z-index: var(--z-index-modal);
+    padding-top: 10rem;
+  }
+  #modalCalculate h2 {
+    text-align: center;
+  }
+  .calculate > img,
+  .calculate > h2 {
+    margin: 0 auto;
+  }
+
+  .impact__calculating {
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    text-align: center;
+    min-height: 30rem;
+  }
+  .impact__calculating li {
+    padding-bottom: 2rem;
+  }
+  .impact__calculating ul li::before {
+    content: url('/assets/icons/payment-check.svg');
+    margin-right: 0.44rem;
+  }
+  #calcMessage1, #calcMessage2, #calcMessage3 {
+    display: none;
+  }
+  @media (max-width: 450px) {
+    .calculate {
+      padding-top: 10rem;
+    }
+  }

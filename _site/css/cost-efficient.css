@@ -1,0 +1,247 @@
+.cost__wrapper {
+    width: 100%;
+    height: 50rem;
+    position: relative;
+}
+
+.cost-efficient .gradient__top {
+    background: linear-gradient(180deg, var(--off-white) 0%, var(--gradient-end) 20%);
+}
+
+.cost-efficient .image__truck {
+    position: absolute;
+    left: -2rem;
+    width: 19.75rem;
+}
+
+.cost-efficient .image__union-large {
+    position: absolute;
+    width: 15.5rem;
+}
+
+.cost-efficient .image__union {
+    position: absolute;
+    top: 33%;
+    left: -5.5rem;
+    width: 10.5rem;
+    height: 7.5rem;
+}
+
+.cost-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: calc((100% - 21.25rem)/2);
+    top: 58%;
+    position: absolute;
+    text-align: center;
+    width: 21.25rem;
+}
+
+.cost-efficient .cost__acc-dialog-box {
+    background: var(--vape);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    color: var(--char);
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: flex-end;
+    left: 10%;
+    padding: 0 2rem 0 4.75rem;
+    position: absolute;
+    top: 23%;
+    width: 20rem;
+}
+
+.cost-efficient .cost__acc-content-container {
+    margin-bottom: 3rem;
+}
+
+.cost__acc-content-container>h1 {
+    line-height: initial;
+}
+
+.cost__acc-content-container>p {
+    margin: 0;
+}
+
+@media (min-width: 1024px) {
+    .cost__wrapper {
+        height: 40rem;
+        max-width: 86rem;
+        left: 25%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cost-dialog {
+        align-items: flex-start;
+        right: 16%;
+        top: 10%;
+        text-align: left;
+        width: 28rem;
+        z-index: 9;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cost-efficient .image__union-large {
+        left: 45%;
+        top: 2%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cost-efficient .image__union {
+        top: 63%;
+        left: 22%;
+        width: 10.5rem;
+        height: 7.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cost-efficient .image__truck {
+        width: 32rem;
+        left: 15%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cost-efficient .cost__acc-dialog-box {
+        top: 50%;
+        left: 31%;
+        width: 20.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cost-efficient .cost__acc-content-container {
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .cost-efficient .rounded-box {
+        padding: 2rem;
+    }
+    .cost-dialog {
+        right: calc((100% - 40.25rem)/2);
+        top: 19%;
+        width: 21.25rem;
+        z-index: 9;
+    }
+    .cost-efficient .cost__acc-dialog-box {
+        left: 18%;
+        top: 44%
+    }
+    .cost-efficient .image__truck {
+        left: 5%;
+        width: 28rem;
+    }
+    .cost-efficient .image__union-large {
+        left: 45%;
+        top: 1%;
+        z-index: 8;
+    }
+    .cost-efficient .image__union {
+        top: 33%;
+        left: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cost-efficient .rounded-box {
+        padding: 1rem;
+        align-items: baseline;
+        text-align: left;
+    }
+    .cost-efficient h2 {
+        width: 67%
+    }
+    .cost-dialog {
+        left: 5%;
+        top: 41%;
+        width: 17.25rem;
+        z-index: 9;
+    }
+    .cost-efficient .cost__acc-dialog-box {
+        left: 45%;
+        top: 40%;
+        padding: 0 3rem 0 2.5rem;
+    }
+    .cost-efficient .image__truck {
+        left: 5%;
+        width: 28rem;
+    }
+    .cost-efficient .image__union-large {
+        left: 50%;
+        top: 15%;
+    }
+    .cost-efficient .image__union {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .cost-efficient .cost__acc-dialog-box {
+        left: 37%;
+        top: 40%;
+        padding: 0 3rem 0 7.5rem;
+    }
+}
+
+@media (max-width: 2000px) {
+    .cost__wrapper {
+        height: 40rem;
+        max-width: 86rem;
+        left: 4%;
+    }
+}
+
+@media (max-width: 540px) { 
+    .cost__wrapper {
+        display: flex;
+        justify-content: center;
+        min-height: 50rem;
+    }
+    
+    .cost-efficient .image__truck {
+        left: auto;
+        width: 19.75rem;
+    }
+    
+    .cost-efficient .image__union-large {
+        left: -44%;
+        top: 38%;
+    }
+
+     .cost-efficient .cost__acc-dialog-box {
+        background: var(--vape);
+        border-radius: 1rem;
+        box-sizing: border-box;
+        color: var(--char);
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+        justify-content: flex-end;
+        left: 10%;
+        padding: 0 2rem 0 4.75rem;
+        position: absolute;
+        top: 23%;
+        width: 20rem;
+    }
+
+    .cost-efficient .rounded-box {
+        padding: 4rem 1.5rem;
+        text-align: center;
+        align-items: center;
+        left: auto;
+        right: auto;
+        width: 80%;
+        top: 56%;
+    }
+
+}
