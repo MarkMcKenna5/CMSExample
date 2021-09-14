@@ -71,15 +71,15 @@ collections:
       - {label: "Card/Image Section Button id", name: "cardImageSectionLeft.item.buttonId", widget: "hidden", default: "weee"}
       - {label: "Card/Image Section Button Text", name: "cardImageSectionLeft.item.buttonText", widget: "string"}
       - {label: "Card/Image Section Button href", name: "cardImageSectionLeft.item.buttonHref", widget: "hidden", default: "/"}
-      - {label: "footer href1", name: "footer.href.logo", widget: "hidden", widget: "hidden", default: "wee"}
-      - {label: "footer href2", name: "footer.href.pro", widget: "hidden", widget: "hidden", default: "/"}
-      - {label: "footer href3", name: "footer.href.proSignUp", widget: "hidden", widget: "hidden", default: "/"}
-      - {label: "footer href4", name: "footer.href.tos", widget: "hidden", widget: "hidden", default: "/"}
-      - {label: "footer href5", name: "footer.href.locations", widget: "hidden", widget: "hidden", default: "/"}
-      - {label: "footer href6", name: "footer.href.howItWorks", widget: "hidden", widget: "hidden", default: "/"}
-      - {label: "footer href7", name: "footer.href.design", widget: "hidden", widget: "hidden", default: "/"}
-      - {label: "footer href8", name: "footer.href.guarantee", widget: "hidden", widget: "hidden", default: "/"}
-      - {label: "footer href9", name: "footer.href.about", widget: "hidden", widget: "hidden", default: "/"}
+      - {label: "footer href1", name: "footer.href.logo", widget: "hidden", default: "wee"}
+      - {label: "footer href2", name: "footer.href.pro", widget: "hidden", default: "/"}
+      - {label: "footer href3", name: "footer.href.proSignUp", widget: "hidden", default: "/"}
+      - {label: "footer href4", name: "footer.href.tos", widget: "hidden", default: "/"}
+      - {label: "footer href5", name: "footer.href.locations", widget: "hidden", default: "/"}
+      - {label: "footer href6", name: "footer.href.howItWorks", widget: "hidden", default: "/"}
+      - {label: "footer href7", name: "footer.href.design", widget: "hidden", default: "/"}
+      - {label: "footer href8", name: "footer.href.guarantee", widget: "hidden", default: "/"}
+      - {label: "footer href9", name: "footer.href.about", widget: "hidden", default: "/"}
   - name: "posts"
     label: "Example posts"
     folder: "posts"
