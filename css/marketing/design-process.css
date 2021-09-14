@@ -1,0 +1,40 @@
+#design-process-main .card-image-section-right {
+  margin: 10rem 0 13rem 0;
+}
+#design-process-main .card-image-section-left {
+  margin-bottom: 5rem;
+}
+#design-process-main .how-it-works-desktop {
+  margin: 12rem auto 0 auto;
+}
+#design-process-main .how-it-works-tablet {
+  margin: 7rem 0 8rem 0;
+}
+#design-process-main .wrapmateDifference {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  #design-process-main .card-image-section-right {
+    margin-top: 5rem;
+  }
+  #design-process-main .card-image-section-right-dialog {
+    height: 24.375rem;
+  }
+  #design-process-main .wrapmateDifference {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 665px) {
+  #design-process-main .how-it-works-mobile {
+    margin: 8rem 0 4rem 0;
+  }
+}
+@media (max-width: 640px) {
+  #design-process-main .card-image-section-left {
+    margin: 17rem 0 20rem 0;
+  }
+  #design-process-main .card-image-section-right {
+    margin-top: 3rem;
+  }
+}

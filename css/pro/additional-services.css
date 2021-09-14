@@ -1,0 +1,114 @@
+.additional-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:51rem;
+    max-height: 80rem;
+    position: relative;
+    overflow: hidden;
+    background-position: right;
+    margin-top: 10rem;
+}
+
+.additional-services__block,
+.additional-services__subtitle {
+    color: var(--white);
+    text-shadow: 0 .25em .625rem var(--text-shadow);
+    max-width: 33rem;
+    letter-spacing: -0.02rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+    position: relative;
+}
+
+.additional-services__content-wrapper {
+    position: absolute;
+    width: min(100%, 31.5rem);
+    text-align: center;
+    margin: 0 35rem 0 0;
+}
+
+.additional-services__overlay {
+    position: absolute;
+    top: .5rem;
+    right: 0;
+    bottom: .5rem;
+    left: 0;
+    background: linear-gradient(90deg, var(--char) 0%, var(--black) 100%);
+}
+
+@media (max-width: 1100px) {
+    .additional-services__content-wrapper {
+        margin: 12.5rem 0 0 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .additional-services_img {
+        margin-right: 30rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .additional-services_img {
+        width: 100%;
+    }
+    .additional-services__overlay {
+        top: 0;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .additional-services_img {
+        margin-right: 50rem;
+    }
+}
+
+.union-bottom {
+    position: absolute;
+    overflow: visible;
+    z-index: 999;
+    left: 0;
+    margin-top: 98.5rem;
+}
+
+.union-top {
+    position: absolute;
+    overflow: visible;
+    z-index: 999;
+    right: 0;
+    top: 63.75rem;
+}
+
+@media (max-width: 2000px) {
+    .union-top {
+        top: 54.75rem;
+    }
+}
+@media (max-width: 1675px) {
+    .union-top {
+        top: 39.75rem;
+    }
+}
+@media (max-width: 1400px) {
+    .union-top {
+        display: none;
+    }
+}
+
+@media (max-width: 1127px) {
+    .union-bottom {
+        margin-top: 126.25rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .union-bottom {
+        margin-top: 153.5rem;
+    }
+}
+@media (max-width: 500px) {
+    .union-bottom {
+        display: none;
+    }
+}

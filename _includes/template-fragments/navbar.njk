@@ -1,0 +1,51 @@
+<header id="landingHeader" class="landingHeader">
+  <!-- desktop nav -->
+  <nav id="desktop-nav">
+    <a href="{{ navLogo.href }}">
+      <img
+        class="nav-logo"
+        id="navLogo"
+        src="{{ navLogo.src }}"
+        alt="{{ navLogo.alt }}"
+      />
+    </a>
+    <ul>
+      {%- for item in navItems %}
+      <li class="{{ item.class }}" id="desktopNavLinks">
+        <a href="{{ item.href }}" class="nav-links">{{ item.title }}</a>
+      </li>
+      {% endfor -%}
+    </ul>
+    <img
+      class="{{ navMenuIcon.class }}"
+      src="{{ navMenuIcon.src }}"
+      alt="menu icon"
+      id="menuIcon"
+    />
+    <button
+      id="{{ desktopNavCtaBtn.id }}"
+      class="button {{ desktopNavCtaBtn.class }} schedule-calendly-btn"
+    >
+      {{ desktopNavCtaBtn.text }}
+    </button>
+  </nav>
+  <!-- mobile nav -->
+  <div class="mobile-nav-bg-overlay">
+    <nav id="mobile-nav">
+      <img id="mobile-nav-close-icon" alt="close x icon" />
+      <ul>
+        {%- for item in navItems %}
+        <li class="{{ item.class }}">
+          <a href="{{ item.href }}">{{ item.title }}</a>
+        </li>
+        {% endfor -%}
+      </ul>
+      <button
+        id="{{ mobileNavCtaBtn.id }}"
+        class="button button-primary schedule-calendly-btn"
+      >
+        {{ mobileNavCtaBtn.text }}
+      </button>
+    </nav>
+  </div>
+</header>

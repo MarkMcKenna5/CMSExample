@@ -1,0 +1,105 @@
+.gray-gradient {
+  background: linear-gradient(
+    180deg,
+    var(--gradient-end) 0%,
+    var(--off-white) 81.7%
+  );
+}
+.gray-gradient-reverse {
+  background: linear-gradient(
+    180deg,
+    #e3e6ed 0%,
+    #eaecf1 12%,
+    rgba(255, 255, 255, 0) 97.69%
+  );
+}
+.card-gradient {
+  background: linear-gradient(0deg, var(--off-white) 8%, var(--white) 24%);
+}
+.card-list-background-white {
+  background: var(--white);
+  border-radius: 12.5rem 0 0 0;
+}
+.card-list-background-dark {
+  color: var(--white);
+  background: linear-gradient(180deg, #3e454b 0%, #202020 100%);
+  border-radius: 12.5rem 0 0 0;
+}
+.card-list-background-dark h1 {
+  color: var(--white);
+}
+.gray-solid {
+  background: linear-gradient(
+    180deg,
+    var(--off-white) 0%,
+    var(--gradient-end) 97.69%
+  );
+}
+.faq-background {
+  background: #f4f8fe;
+}
+
+.about-background {
+  background: linear-gradient(
+    180deg,
+    #fefefe 0%,
+    #ffffff 14.77%,
+    #e3e6ed 81.7%
+  );
+}
+
+.design-process-background {
+  background: linear-gradient(180deg, var(--white) 0%, #f4f8fe 97.69%);
+}
+.design-process-hero-background {
+  background: linear-gradient(260.78deg, #007aff 36.78%, #4253ff 92.65%);
+  max-height: 36.5rem;
+}
+.design-process-hero-background-radial {
+  width: 71.188rem;
+  min-height: 42rem;
+  position: absolute;
+  left: 20.9%;
+  right: 0%;
+  top: 0%;
+  bottom: 6.33%;
+  background: radial-gradient(
+    72.7% 130.51% at 45.43% 77.8%,
+    #d6eaff 0%,
+    #007aff 100%
+  );
+  mix-blend-mode: overlay;
+}
+
+.trustBlue,
+.trustGray {
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+  -moz-filter: blur(100px);
+  -o-filter: blur(100px);
+  -ms-filter: blur(100px);
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.trustBlue {
+  background: linear-gradient(97.79deg, var(--blue) 0%, var(--wm-aqua) 139.1%);
+  opacity: 0.05;
+}
+.trustGray {
+  background: var(--smoke);
+  filter: blur(100px);
+}
+@media (max-width: 1024px) {
+  .card-list-background-white,
+  .card-list-background-dark {
+    border-radius: 7.5rem 0 0 0;
+  }
+}
+@media (max-width: 600px) {
+  .card-list-background-white,
+  .card-list-background-dark {
+    border-radius: 5rem 0 0 0;
+  }
+}

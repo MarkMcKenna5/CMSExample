@@ -1,0 +1,106 @@
+.peace-of-mind-page-main {
+  width: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) -1.14%,
+      #e1eaf1 85.83%
+    ),
+    #ffffff;
+}
+.peace-of-mind-page-main .hero__content-wrapper {
+  width: 64.5rem;
+  margin-top: -3rem;
+}
+.peace-of-mind-page-main .headerBlock {
+  max-width: 37rem;
+  margin-top: -7rem;
+}
+.peace-of-mind-page-main .hero__content-wrapper h4 {
+  max-width: 17rem;
+  font-family: 'Avenir Next Bold';
+  font-size: 1rem;
+  line-height: 200%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.peace-of-mind-page-main .hero__content-wrapper #startProject {
+  display: none;
+}
+#hero-badge-div {
+  width: 100%;
+}
+#hero-badge-div img {
+  content: url('/assets/marketing/peace-of-mind/satisfaction-badge-desktop-white.svg');
+  margin-left: -2.5rem;
+  width: unset;
+}
+.promise-text {
+  font-family: 'GT Walsheim Bold';
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--fog);
+  margin-bottom: 0.5rem;
+}
+.peace-of-mind-page-main #guarantee-card-left1 {
+  margin-top: 10rem;
+}
+/*
+.peace-of-mind-page-main .card-image-section-right {
+  margin-top: 10rem;
+}
+.peace-of-mind-page-main .card-image-section-left {
+  margin-top: 12rem;
+}
+.peace-of-mind-page-main .card-image-section-right-wrapper {
+  height: fit-content;
+}
+.peace-of-mind-page-main .card-image-section-left__content-container {
+  min-height: fit-content;
+} */
+/* .peace-of-mind-page-main .wrapmateDifference {
+  margin-top: 13rem;
+} */
+.peace-of-mind-page-main .faq-background {
+  background: unset;
+}
+@media (max-width: 1032px) {
+  .peace-of-mind-page-main .hero__content-wrapper {
+    width: 37rem;
+  }
+  .peace-of-mind-page-main .headerBlock {
+    margin-top: unset;
+  }
+}
+@media (max-width: 768px) {
+  #hero-badge-div img {
+    content: url('/assets/marketing/peace-of-mind/satisfaction-badge-tablet-white.svg');
+  }
+}
+@media (max-width: 640px) {
+  .peace-of-mind-page-main .hero__content-wrapper {
+    width: 19rem;
+    margin-top: 2rem;
+  }
+  .peace-of-mind-page-main .headerBlock {
+    font-size: 2rem;
+  }
+  #hero-badge-div img {
+    content: url('/assets/marketing/peace-of-mind/satisfaction-badge-mobile-white.svg');
+    position: absolute;
+    top: 11.5rem;
+  }
+  .promise-text {
+    font-size: 1rem;
+  }
+  .peace-of-mind-page-main #guarantee-card-left1,
+  .peace-of-mind-page-main .card-image-section-left {
+    margin: 5rem 0 20rem 0;
+  }
+  .peace-of-mind-page-main .card-image-section-right {
+    margin: 3.5rem 0 20rem 0;
+  }
+  .peace-of-mind-page-main .wrapmateDifference {
+    margin: 6rem 0 0 0;
+  }
+}

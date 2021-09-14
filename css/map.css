@@ -1,0 +1,143 @@
+.map {
+    height: 66rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    text-align: center;
+    position: relative;
+  }
+  
+  .helper {
+    color: var(--blue);
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+  
+  .map .title {
+    max-width: 43rem;
+  }
+  
+  .map .caption {
+    max-width: 31rem;
+    margin: 1rem 2rem 5rem;
+  }
+  
+  .map__box {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+  
+  .image-placeholder {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  fieldset {
+    border: none;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 2rem 0 1rem 0;
+    text-align: left;
+  }
+  
+  .location-button {
+    width: 2rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  .location__field-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form__location {
+    width: 100%;
+  }
+  .form__location input {
+    padding: 0;
+    margin-top: 0.75rem;
+  }
+  .zipbox__wrapper {
+    position: absolute;
+    width: 21.25rem;
+    left: calc((100% - 33.25rem) / 2);
+    top: 54rem;
+  }
+  .location-loading {
+    display: none;
+    animation: spin 2s linear infinite;
+  }
+  
+  .zipbox__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }
+  @media (max-width: 768px) {
+      .map {
+          margin-bottom: 5rem;
+      }
+  }
+  
+  @media (max-width: 1024px) {
+    .map .rounded-box {
+      padding: 2rem;
+      width: 34.5rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .map .rounded-box {
+      padding: 2rem;
+      width: 22rem;
+      left: calc((100% - 22.25rem) / 2);
+    }
+    .zipbox__content {
+      align-items: center;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .map__video {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .map {
+      height: 75rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .zipbox__wrapper {
+      width: 37rem;
+      left: calc((100% - 37rem) / 2);
+      top: 59rem;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .zipbox__wrapper {
+      top: 54rem;
+    }
+  }
+  

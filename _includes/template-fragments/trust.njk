@@ -1,0 +1,12 @@
+<section class="trust">
+    <div class="trustBg {{ trustBackground }}"></div>
+    <h3 id="trust-header">{{ trustH3 }}</h3>
+    <div class="trustContainer slidable">
+      <div id="trustSlider" class="trustSlider">
+    {% for item in trust %}
+        <img src="{{ item.src }}" class="trust-logo" alt="{{ item.alt }}"/>
+    {% endfor %}
+      </div>
+    </div>
+</section>
+<script type="module" src="/src/template-fragments/trust.js"></script>

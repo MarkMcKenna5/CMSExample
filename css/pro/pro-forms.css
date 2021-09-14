@@ -1,0 +1,360 @@
+@import '/css/shared/fonts.css';
+@import '/css/shared/colors.css';
+@import '/css/template-fragments/modal.css';
+@import '/css/shared/buttons.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ash);
+  font-family: 'Avenir Next', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  background: var(--vape);
+}
+
+.questionnaireHeader img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 1rem;
+}
+
+a:active,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: 'GT Walsheim Bold';
+  font-weight: bold;
+  color: var(--char);
+  text-align: center;
+}
+
+.proFormMain h1 {
+  font-size: 3rem;
+  width: min(100%, 30rem);
+  letter-spacing: -0.02rem;
+}
+
+.rounded-box {
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    position: relative;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: Avenir Next Bold;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 150%;
+  text-align: center;
+}
+
+.submit {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.submit button {
+  width: 50%;
+}
+
+.subhead {
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
+  margin-left: 0.4rem;
+}
+
+#shop-state-field,
+#shop-zip-field,
+#fname-field,
+#lname-field {
+  width: 48%;
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  overflow: hidden;
+}
+
+.short-form {
+  border: 2px solid var(--smoke);
+}
+
+.state {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 48%;
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  padding: 0.3rem 0 0.35rem 1.5rem;
+  border: 2px solid var(--smoke);
+  font-family: Avenir Next;
+  font-weight: bold;
+  line-height: 1.5rem;
+  color: var(--char);
+  font-size: 1rem;
+  max-height: 5rem;
+}
+
+#shop-state {
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  width: 8rem;
+  padding-bottom: 0.15rem;
+}
+
+@media (max-width: 425px) {
+  #state {
+    width: 5rem;
+  }
+}
+
+.short-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox,
+.shop-type-checkbox,
+#other-checkbox {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.75rem;
+  margin-right: 1rem;
+  border: 2px solid var(--smoke);
+  color: var(--char);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.check-container {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  padding: 1.25rem 0 1.25rem 1.5rem;
+  margin: 0 0 1.5rem 0;
+  border: 2px solid var(--smoke);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.other-container {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  padding: 1.25rem 0 0rem 1.5rem;
+  margin: 0 0 1.5rem 0;
+  border: 2px solid var(--smoke);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#other-field {
+  width: 94%;
+}
+
+.other-checkbox {
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+label {
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  margin-left: 0.1rem;
+}
+
+input {
+  font-family: Avenir Next;
+  font-weight: bold;
+  line-height: 1.5rem;
+  border: none;
+}
+
+.questionnaireHeader {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+fieldset {
+  border: 2px solid var(--smoke);
+}
+
+.field-invalid {
+  border: 2px solid var(--color-danger);
+  border-radius: 0.5rem;
+}
+
+.field-valid {
+  border: 2px solid var(--color-valid);
+  border-radius: 0.5rem;
+}
+
+.label-invalid {
+  color: var(--color-danger);
+}
+
+.label-valid {
+  color: var(--color-valid);
+}
+
+.pro__form fieldset {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.checkbox,
+.shop-type-checkbox,
+#other-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+form label {
+  color: var(--ash);
+  font-weight: 400;
+}
+
+form input {
+  font-size: 1rem;
+}
+
+.proFormMain {
+  width: min(100%, 90rem);
+  min-height: 70%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0 0 0 12rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#gotItBtn {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .proFormMain {
+    padding: 0 2.5rem;
+  }
+}
+
+.head {
+  width: min(100%, 26rem);
+  margin-bottom: 105rem;
+}
+
+.pro__form {
+  width: min(100%, 27rem);
+}
+
+@media (max-width: 768px) {
+  .proFormMain {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+  .head {
+    margin-bottom: 0;
+  }
+  .pro__form {
+    width: 27rem;
+  }
+}
+@media (max-width: 430px) {
+  .pro__form {
+    width: 22rem;
+  }
+}
+@media (max-width: 370px) {
+  .pro__form {
+    width: 19rem;
+  }
+  #shop-state {
+    width: 6rem;
+  }
+  .head {
+    width: 21rem;
+  }
+}
+
+.text__center {
+  text-align: center;
+  margin-bottom: 15;
+}
+
+.content__center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/3;
+}
+
+.confirmation-text {
+  width: 26rem;
+  left: 0;
+  top: 2rem;
+  line-height: 150%;
+  text-align: center;
+}
+
+.pro-confirmation {
+  padding-top: 10rem;
+}
+
+@media (max-width: 425px) {
+  .confirmation-text,
+  .text__center {
+    width: auto;
+  }
+  #confirm {
+    width: 100%;
+  }
+}
+
+/* hiding the arrows for number inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+*:focus {
+  outline: 0;
+}

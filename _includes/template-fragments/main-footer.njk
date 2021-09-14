@@ -1,0 +1,118 @@
+{%- for href in footer %}
+<footer>
+  <div class="container">
+    <div class="footer__row">
+      <div class="footer__left">
+        <a href="{{ href.logo }}">
+          <h2>wrapmate</h2>
+        </a>
+        <p>More customers with every mile.</p>
+        <div class="social">
+          <a href="https://twitter.com/wrapmate" target="_blank">
+            <img
+              src="/assets/social/twitter-social.svg"
+              width="32"
+              height="32"
+              alt="Twitter"
+            />
+          </a>
+          <a href="https://linkedin.com/company/wrapmate" target="_blank">
+            <img
+              src="/assets/social/linkedin-social.svg"
+              width="32"
+              height="32"
+              alt="LinkedIn"
+            />
+          </a>
+          <a href="https://facebook.com/wrapmate" target="_blank">
+            <img
+              src="/assets/social/fb-social.svg"
+              width="32"
+              height="32"
+              alt="Facebook"
+            />
+          </a>
+          <a href="https://instagram.com/wrapmate" target="_blank">
+            <img
+              src="/assets/social/insta-social.svg"
+              width="32"
+              height="32"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="footer__company">
+        <h2>Company</h2>
+        <ul>
+          <li>
+            <a href="{{ href.locations }}">Locations</a>
+          </li>
+          <li>
+            <a href="{{ href.howItWorks }}">How it Works</a>
+          </li>
+          <li>
+            <a href="{{ href.guarantee }}">Guarantee</a>
+          </li>
+          <li>
+            <a href="{{ href.design }}">Design Process</a>
+          </li>
+          <li>
+            <a href="{{ href.about }}">About Us</a>
+          </li>
+          <li>
+            <a href="/jobs/" target="_blank">Careers</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h2>Contact</h2>
+        <ul>
+          <li>
+            <a href="/help/">Help</a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onClick="scheduleCall('https://calendly.com/d/m5bv-zqc5/schedule-a-wrapmate-consultation');return false"
+              >Sales</a
+            >
+          </li>
+          <li>
+            <a href="/help/index.html#faq" id="faqLink">FAQ</a>
+          </li>
+          <li>
+            <a href="https://blog.wrapmate.com/" target="_blank">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__pros">
+        <h2>Pros</h2>
+        <ul>
+          <li>
+            <a href="{{ href.pro }}">Become a Pro</a>
+          </li>
+          <li>
+            <a href="{{ href.proSignUp }}">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__details footer__row">
+      <ul>
+        <li>©2021 Wrapmate®. All Rights Reserved.</li>
+        <li>
+          <a href="{{ href.tos }}" target="_blank">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="/privacy" target="_blank">Privacy Policy</a>
+        </li>
+      </ul>
+      <p>Made with 💙 at our HQ in Denver, CO</p>
+    </div>
+    <div class="footer__row align-right">
+      <p>v1.0.1</p>
+    </div>
+  </div>
+</footer>
+{% endfor -%}

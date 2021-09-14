@@ -1,0 +1,149 @@
+.testimonials {
+  background-color: var(--white);
+  text-align: center;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.callout {
+  max-width: 20.5rem;
+  margin: 1rem;
+}
+.callout img {
+  margin-bottom: 2rem;
+}
+.callouts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.stepsImage {
+  border-radius: 0.625rem;
+}
+
+.testimonial__video {
+  font-weight: 700;
+  font-family: 'Avenir Next Bold', sans-serif;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+#open1 {
+  margin: 11.75rem 0 0 2.75rem;
+}
+#open2 {
+  margin: 11.75rem 0 0 1rem;
+}
+#open3 {
+  margin: 11.75rem 0 0 2rem;
+}
+
+.testimonial__video::after {
+  content: url('/assets/icons/video-button-play-light.svg');
+  margin-left: 1rem;
+}
+
+.testimonialTemplate {
+  max-width: 64.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem auto 0 auto;
+}
+
+.star-rating {
+  margin-bottom: 1.25rem;
+}
+
+.testimonialTemplate h1 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.testimonial-info {
+  width: 31.5rem;
+  margin: 2rem 3rem 0 0;
+}
+.testimonial-employee {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.25rem;
+  align-items: center;
+}
+.testimonial-employee p {
+  margin-left: 1rem;
+}
+
+.testimonial-media {
+  position: relative;
+}
+.testimonialVideoButton {
+  color: var(--white);
+  position: absolute;
+  font-weight: 700;
+  font-family: 'Avenir Next Bold', sans-serif;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  top: 20rem;
+  right: 0.5rem;
+}
+
+.testimonialVideoButton::after {
+  content: url('/assets/icons/video-button-play-light.svg');
+  margin: 0.3rem 0 0 0.5rem;
+}
+
+@media (max-width: 1100px) {
+  .testimonial-info {
+    margin: 2rem 0 0 0;
+  }
+}
+@media (min-width: 1032px) {
+  #industry-subpage-main .testimonialTemplate {
+    margin: 0 auto 5rem auto;
+  }
+}
+@media (max-width: 1024px) {
+  .testimonialTemplate {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+  .testimonial-employee {
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .testimonial-media img,
+  .testimonial-info {
+    width: 20.5rem;
+  }
+  .testimonial-employee img {
+    max-height: 4rem;
+  }
+  .testimonialTemplate h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 19rem;
+  }
+  .testimonial-employee {
+    margin-bottom: 2rem;
+  }
+  .testimonialVideoButton {
+    top: 12rem;
+  }
+  .testimonial-employee img {
+    max-height: 4rem;
+  }
+}

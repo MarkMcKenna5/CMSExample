@@ -1,0 +1,66 @@
+/* CTA */
+
+.cta {
+    align-items: center;
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (max-width: 640px) {
+    .cta {
+        height: 29.75rem;
+    }
+}
+
+.cta__image {
+    width: max(42rem, 100%);
+}
+
+.cta .title {
+    position: absolute;
+    top: 16%;
+    width: min(75%, 32rem);
+    color: var(--white);
+    text-shadow: 0 .25rem .625rem var(--text-shadow);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+    .cta .title {
+        top: 5rem;
+    }
+}
+
+.cta a {
+    position: absolute;
+    bottom: 20%;
+    margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+    .cta a {
+        bottom: 15%;
+        width: 63%;
+    }
+}
+
+.multiply {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: min(36%, 48rem);
+    background: linear-gradient( 180deg, rgba(47, 37, 28, 0.5) 4.55%, rgba(47, 37, 28, 0) 97.69%);
+}
+
+.bottom-gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 18rem;
+    background: linear-gradient(180deg, var(--char) 0%, var(--black) 97.69%);
+    transform: rotate(180deg);
+}

@@ -1,0 +1,46 @@
+@import '/css/shared/fonts.css';
+@import '/css/shared/colors.css';
+@import '/css/shared/backgrounds.css';
+.faq-wrapper {
+  width: 100%;
+  min-width: 17.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.faq-title-mobile {
+  display: none;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq-section {
+  margin: 10rem 0;
+  width: 100%;
+  max-width: 64.5rem;
+}
+
+@media (max-width: 1024px) {
+  .faq-section {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .faq-wrapper {
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq-title {
+    display: none;
+  }
+  .faq-title-mobile {
+    display: flex;
+  }
+}

@@ -1,0 +1,23 @@
+<section id="{{ 3ImgCta.id }}" class="img-cta">
+    <hgroup>
+    <h1>{{ 3ImgCta.h1 | safe }}</h1>
+      <p>{{ 3ImgCta.p | safe }}</p>
+    </hgroup>
+    <div class="cta-container">
+{% for item in 3ImgCtaInfo %}
+      <div class="cta-item">
+        <img class="cta-img" src="{{ item.src }}" alt="{{ item.alt }}"/>
+        <hrgroup>
+          <h2>{{ item.h2 | safe }}</h2>
+          <p>
+          {{ item.p | safe }}
+          </p>
+          {% if item.logoSrc %}
+          <img alt="logo" src="{{ item.logoSrc }}" />
+          {% endif %}
+        </hrgroup>
+      </div>
+{% endfor %}
+    </div>
+    <a href="{{ 3ImgCta.buttonHref }}"  id="{{ 3ImgCta.buttonId }}" class="{{ 3ImgCta.buttonClass }}">{{ 3ImgCta.buttonText }}</a>
+  </section>

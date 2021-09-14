@@ -1,0 +1,19 @@
+:root {
+    /* Colors */
+    --ash: #3e454b;
+    --blue: #007aff;
+    --char: #202020;
+    --fog: #b6c2ce;
+    --smoke: #e1eaf1;
+    --vape: #f5f7f9;
+    --wm-aqua: #00e0ff;
+    --color-danger: #d83a39;
+    --color-valid: #34c759;
+    --white: #ffffff;
+    --off-white: #e3e6ed;
+    --box-shadow: rgba(0, 122, 255, 0.1);
+    --text-shadow: rgba(0, 0, 0, 0.1);
+    --black: rgba(32, 32, 32, 0);
+    --gradient-end: rgba(255, 255, 255, 0);
+    --modal-backdrop: rgba(0, 0, 0, 0.5);
+}

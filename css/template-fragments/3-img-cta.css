@@ -1,0 +1,43 @@
+@import '/css/shared/fonts.css';
+@import '/css/shared/colors.css';
+@import '/css/shared/backgrounds.css';
+.img-cta {
+  text-align: center;
+  padding: 0rem 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-cta h1 {
+  max-width: 64.5rem;
+}
+.cta-item {
+  max-width: 20.5rem;
+  margin: 0.5rem;
+}
+
+.cta-item img {
+  margin-bottom: 2rem;
+}
+
+.cta-container {
+  max-width: 64.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta-img {
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 2rem -0.25rem var(--box-shadow);
+}
+
+@media (max-width: 640px) {
+  .img-cta h1 {
+    font-size: 2rem;
+  }
+  .img-cta {
+    padding: 0rem 1.5rem 0 1.5rem;
+  }
+}

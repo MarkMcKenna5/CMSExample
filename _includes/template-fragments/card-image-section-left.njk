@@ -1,0 +1,41 @@
+{% macro cardImageSectionLeftMacro(id, class, promiseH2, promiseH2Class,h1, type, src, alt, h2, p, p2, buttonId, buttonText, buttonHref) %}
+<section id="{{ id }}" class="card-image-section-left {{ class }}">
+  <h2 class="{{promiseH2Class}}">{{promiseH2}}</h2>
+    <h1 class="title center">{{ h1 }}</h1>
+    <div class="card-image-section-left__content-container">
+      <div class="shadow bg-white card-image-section-left-dialog">
+        <h2>{{ h2 | safe }}</h2>
+        <p>{{ p | safe }}</p>
+        <p class="sub-paragraph">{{ p2 }}</p>
+        <a id="{{ buttonId }}" class="button button-primary" href="{{buttonHref}}">{{ buttonText }}</a>
+      </div>
+      <div class="card-image-section-left-image-wrapper">
+        <{{ type }} src="{{ src }}" autoplay muted loop playsinline class="price__video lazy" alt="{{ alt }}">
+          <source data-src="{{ src }}" type="{{ type }}">
+        </{{ type }}>
+      </div>
+    </div>
+</section>
+{% endmacro %}
+{% for item in cardImageSectionLeft %}
+<section id="{{ item.id }}" class="card-image-section-left {{ item.class }}">
+  <h2 class="{{item.promiseH2Class}}">{{item.promiseH2}}</h2>
+    <h1 class="title center">{{ item.h1 }}</h1>
+    <div class="card-image-section-left__content-container">
+      <div class="card-image-section-left-image-wrapper">
+        <{{ item.type }} src="{{ item.src }}" autoplay muted loop playsinline class="price__video lazy" alt="{{ item.alt }}">
+        {% if item.videoButton %}
+        <a id="{{ item.videoButtonId }}"class="video-button-light">{{ item.videoButtonText }}</a>
+        {% endif %}
+          <source data-src="{{ item.src }}" type="{{ item.type }}">
+        </{{ item.type }}>
+      </div>
+      <div class="shadow bg-white card-image-section-left-dialog">
+        <h2>{{ item.h2 | safe}}</h2>
+        <p>{{ item.p | safe }}</p>
+        <p class="sub-paragraph">{{ item.p2 }}</p>
+        <a id="{{ item.buttonId }}" class="button button-primary" href="{{item.buttonHref}}">{{ item.buttonText }}</a>
+      </div>
+    </div>
+</section>
+{% endfor %}

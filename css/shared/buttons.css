@@ -1,0 +1,171 @@
+@import '/css/shared/fonts.css';
+@import '/css/shared/colors.css';
+
+.button {
+  align-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Avenir Next bold';
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 150%;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  min-width: 12.5rem;
+  border: none;
+}
+.button:focus {
+  outline: none;
+}
+/* primary buttons */
+.button-primary,
+.button-primary-no-arrow,
+.button-primary-down-arrow {
+  color: var(--white) !important;
+  background-color: var(--blue);
+}
+.button-primary:hover,
+.button-primary-no-arrow:hover,
+.button-primary-down-arrow:hover {
+  color: var(--white);
+}
+/* buttons with right arrow */
+.button-primary::after {
+  content: url('/assets/icons/arrow-left-white.svg');
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.5rem;
+}
+/* buttons with down arrow */
+.button-primary-down-arrow::after {
+  content: url('/assets/Small-down-arrow.svg');
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}
+/* secondary buttons  */
+.button-secondary {
+  color: var(--blue);
+  border: 2px solid var(--smoke);
+  background: none;
+}
+.button-secondary::after {
+  content: url('/assets/icons/arrow-blue.svg');
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}
+.button-secondary-white-arrow::after {
+  content: url('/assets/icons/arrow-left-white.svg');
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+}
+.button-secondary-no-arrow-blue-text {
+  color: var(--blue);
+  border: 2px solid var(--smoke);
+  background: none;
+}
+.button-secondary-white-arrow {
+  color: var(--white);
+  border: 2px solid var(--smoke);
+  background: none;
+}
+.button-secondary-no-arrow-white-text {
+  color: var(--white);
+  border: 2px solid var(--smoke);
+  background: none;
+}
+.button-secondary-no-arrow-blue-text-fog-border {
+  color: var(--blue);
+  border: 2px solid var(--fog);
+  background: none;
+}
+.button-disabled {
+  color: var(--fog);
+  background: var(--smoke);
+  border: none;
+  cursor: default;
+  pointer-events: none;
+}
+.location-button {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  padding: 0;
+}
+/* Hide radio buttons since the labels are clickable */
+input[type='radio'] {
+  display: none;
+}
+/* Type image button*/
+.image-button {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 0px 6px 16px -2px var(--box-shadow);
+  border-radius: 1rem;
+  background-color: var(--white);
+  font-weight: bold;
+  font-size: inherit;
+  margin-bottom: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+a.image-button,
+label.image-button {
+  padding-bottom: var(--image-button-text-bottom);
+}
+@media (max-width: 640px) {
+  label.image-button {
+    width: 20.5rem;
+  }
+}
+.image-button span {
+  position: absolute;
+  bottom: var(--image-button-text-bottom);
+}
+.image-button img {
+  position: absolute;
+  height: 9rem;
+  top: 2.7rem;
+}
+.image-button--lg {
+  width: min(100%, 32rem);
+  height: 15rem;
+}
+.image-button--md {
+  width: auto;
+  height: 15rem;
+}
+.image-button--sm {
+  width: 15rem;
+  height: 13rem;
+}
+.image-button--xs {
+  align-items: center;
+  height: 4.5rem;
+}
+#something-else-info-btn {
+  display: inline-flex;
+  color: var(--white);
+  background-color: var(--blue);
+  margin-top: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/* mobile views */
+@media (max-width: 480px) {
+  .button-primary,
+  .button-primary-no-arrow,
+  .button-primary-down-arrow,
+  .button-secondary {
+    width: 100%;
+  }
+}

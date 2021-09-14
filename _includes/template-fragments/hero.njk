@@ -1,0 +1,64 @@
+{% if alternateHero %} {%- for item in hero %}
+<section class="{{ item.class }}">
+  <div class="{{ item.heroContentClass }}">
+    <h1>{{ item.h1 }}</h1>
+    <a
+      class="button {{ item.buttonClass }}"
+      id="{{ item.buttonId }}"
+      href="{{ item.buttonHref }}"
+    >
+      {{ item.buttonText }}
+    </a>
+    <!-- <p class="designProcessDisclaimer">{{ item.disclaimer1 }}</p> -->
+  </div>
+  <picture class="alternateHeroImg">
+    <source srcset="{{ item.src }}" media="(min-width: 1440px)" />
+    <source srcset="{{ item.srcMd }}" media="(min-width: 708px)" />
+    <source srcset="{{ item.srcSm }}" media="(min-width: 320px)" />
+    <img src="{{ item.src }}" />
+  </picture>
+  <div class="alternateHeroContentMobile">
+    <h1>{{ item.h1 }}</h1>
+    <p class="designProcessDisclaimerMobile">{{ item.disclaimer1 }}</p>
+    <p class="designProcessDisclaimerMobile">{{ item.disclaimer2 }}</p>
+    <p class="designProcessDisclaimerMobile">{{ item.disclaimer3 }}</p>
+    <a
+      class="button {{ item.buttonClass }}"
+      id="{{ item.buttonId }}"
+      href="{{ item.buttonHref }}"
+    >
+      {{ item.buttonText }}
+    </a>
+  </div>
+</section>
+{% endfor %} {% else %} {%- for item in hero %}
+<picture class="hero {{ item.class }}" id="{{ item.id }}">
+  <source srcset="{{item.src}}" media="(min-width: 901px)" />
+  <source srcset="{{item.srcMd}}" media="(min-width: 641px)" />
+  <source srcset="{{item.srcSm}}" media="(min-width: 320px)" />
+  <img
+    src="{{ item.src }}"
+    class="hero__image {{ item.heroImgClass }}"
+    alt="{{ item.alt }}"
+  />
+  <div class="{{ item.heroContentClass }}">
+    <div id="{{ item.badgeId }}"><img /></div>
+    <h1 class="{{ item.headerClass }}">
+      {{ item.h1 | safe }}
+    </h1>
+    <h4 class="{{ item.subtitleClass }}">
+      {{ item.subtitle | safe }}
+    </h4>
+    {% if item.buttonId %}
+    <a
+      id="{{ item.buttonId }}"
+      class="button {{ item.buttonClass }}"
+      href="{{ item.buttonHref }}"
+    >
+      {{ item.buttonText }}
+    </a>
+    {% endif %}
+    <p class="{{ item.disclaimerClass }}">{{ item.disclaimer }}</p>
+  </div>
+</picture>
+{%- endfor %} {%- endif %}
