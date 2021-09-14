@@ -2,7 +2,6 @@
 layout: layouts/affiliate.njk
 title: affiliate 1
 description: Get an exact price in seconds with Wrapmate.
-hidden: true
 navLogo:
   src: /assets/logo-white.svg
   alt: wrapmate logo white
@@ -45,32 +44,6 @@ hero:
     buttonClass: "button-primary"
     buttonText: 'Get a price now'
     buttonHref: '/express/type/'
-trustH3: 'Trusted by thousands of business owners nationwide.'
-trust:
-  - item:
-    src: '/assets/trust-logos/viva.png'
-    alt: 'Viva Rescue logo'
-  - item:
-    src: '/assets/trust-logos/hickory-house.png'
-    alt: 'Hickory House Ribs logo'
-  - item:
-    src: '/assets/trust-logos/vyve.png'
-    alt: 'Vyve broadband logo'
-  - item:
-    src: '/assets/trust-logos/capstone.png'
-    alt: 'Capstone Motorsports logo'
-  - item:
-    src: '/assets/trust-logos/mobility.png'
-    alt: 'Mobility Prosthetics logo'
-  - item:
-    src: '/assets/trust-logos/jch.png'
-    alt: 'JCH Cabinets logo'
-  - item:
-    src: '/assets/trust-logos/jch.png'
-    alt: 'JCH Cabinets logo'
-  - item:
-    src: '/assets/trust-logos/jch.png'
-    alt: 'JCH Cabinets logo'
 3ImgCta:
   h1: 'Start advertising without the effort.'
   buttonId: 'startProject'
@@ -118,5 +91,3 @@ footer:
     guarantee: "/guarantee/"
     about: '/about/'
 ---
-
-TESTIN THE SHIT
