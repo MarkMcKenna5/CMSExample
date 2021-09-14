@@ -1,17 +1,17 @@
 ---
 layout: layouts/affiliate.njk
-title: test
+title: Test
 description: test
-hero.heroSrc: /images/uploads/download.jpg
-hero.heroSrcMd: /images/beer.jpg
-hero.heroSrcSm: /images/beer.jpg
-hero.heroContentClass: heroContentBottom
-hero.heroH1: testawteeeeeeeeeeeeeawetawetwetawetawetawteaawet
-hero.heroSubtitle: test
-hero.heroHeaderClass: heroHeader
-hero.heroSubtitleClass: heroSubtitle
-hero.heroButtonId: startProject
-hero.heroButtonClass: button-primary
-hero.heroButtonText: test
-hero.heroButtonHref: /
+hero.item.heroSrc: /images/uploads/download.jpg
+hero.item.heroSrcMd: /images/beer.jpg
+hero.item.heroSrcSm: /images/beer.jpg
+hero.item.heroContentClass: heroContentBottom
+hero.item.heroH1: atewwtweatwataweweat
+hero.item.heroSubtitle: twewteatwewte
+hero.item.heroHeaderClass: heroHeader
+hero.item.heroSubtitleClass: heroSubtitle
+hero.item.heroButtonId: startProject
+hero.item.heroButtonClass: button-primary
+hero.item.heroButtonText: wteatawetweawtae
+hero.item.heroButtonHref: /
 ---
