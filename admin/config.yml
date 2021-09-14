@@ -18,36 +18,36 @@ collections:
       - { label: "Hero Subtitle", name: "hero.item.subtitle", widget: "string" }
       - { label: "Hero Button Text", name: "hero.item.buttonText", widget: "string" }
       - { label: "Trust Section Header", name: "trustH3", widget: "image" }
-      - { label: "Trust Image 1", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 1 alternate text", name: "trust.item.alt", widget: "string" }
-      - { label: "Trust Image 2", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 2 alternate text", name: "trust.item.alt", widget: "string" }
-      - { label: "Trust Image 3", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 3 alternate text", name: "trust.item.alt", widget: "string" }
-      - { label: "Trust Image 4", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 4 alternate text", name: "trust.item.alt", widget: "string" }
-      - { label: "Trust Image 5", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 5 alternate text", name: "trust.item.alt", widget: "string" }
-      - { label: "Trust Image 6", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 6 alternate text", name: "trust.item.alt", widget: "string" }
-      - { label: "Trust Image 7", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 7 alternate text", name: "trust.item.alt", widget: "string" }
-      - { label: "Trust Image 8", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 8 alternate text", name: "trust.item.alt", widget: "string" }
+      - { label: "Trust Image 1", name: "trust.item[0].src", widget: "image" }
+      - { label: "Trust Image 1 alternate text", name: "trust.item[0].alt", widget: "string" }
+      - { label: "Trust Image 2", name: "trust.item[1].src", widget: "image" }
+      - { label: "Trust Image 2 alternate text", name: "trust.item[1].alt", widget: "string" }
+      - { label: "Trust Image 3", name: "trust.item[2].src", widget: "image" }
+      - { label: "Trust Image 3 alternate text", name: "trust.item[2].alt", widget: "string" }
+      - { label: "Trust Image 3", name: "trust.item[3].src", widget: "image" }
+      - { label: "Trust Image 3 alternate text", name: "trust.item[3].alt", widget: "string" }
+      - { label: "Trust Image 4", name: "trust.item[4].src", widget: "image" }
+      - { label: "Trust Image 4 alternate text", name: "trust.item[4].alt", widget: "string" }
+      - { label: "Trust Image 5", name: "trust.item[5].src", widget: "image" }
+      - { label: "Trust Image 5 alternate text", name: "trust.item[5].alt", widget: "string" }
+      - { label: "Trust Image 6", name: "trust.item[6].src", widget: "image" }
+      - { label: "Trust Image 6 alternate text", name: "trust.item[6].alt", widget: "string" }
+      - { label: "Trust Image 7", name: "trust.item[7].src", widget: "image" }
+      - { label: "Trust Image 7 alternate text", name: "trust.item[7].alt", widget: "string" }
       - { label: "3 Image CTA Header", name: "3ImgCta.h1", widget: "string" }
       - { label: "3 Image CTA Button Text", name: "3ImgCta.buttonText", widget: "string" }
-      - { label: "3 Image CTA Image 1", name: "3ImgCtaInfo.item.src", widget: "image" }
-      - { label: "3 Image CTA Alternate text 1", name: "3ImgCtaInfo.item.alt", widget: "string" }
-      - { label: "3 Image CTA Header 1", name: "3ImgCtaInfo.item.h2", widget: "string" }
-      - { label: "3 Image CTA Content 1", name: "3ImgCtaInfo.item.p", widget: "string" }
-      - { label: "3 Image CTA Image 2", name: "3ImgCtaInfo.item.src", widget: "image" }
-      - { label: "3 Image CTA Alternate text 2", name: "3ImgCtaInfo.item.alt", widget: "string" }
-      - { label: "3 Image CTA Header 1", name: "3ImgCtaInfo.item.h2", widget: "string" }
-      - { label: "3 Image CTA Content 1", name: "3ImgCtaInfo.item.p", widget: "string" }
-      - { label: "3 Image CTA Image 3", name: "3ImgCtaInfo.item.src", widget: "image" }
-      - { label: "3 Image CTA Alternate text 3", name: "3ImgCtaInfo.item.alt", widget: "string" }
-      - { label: "3 Image CTA Header 1", name: "3ImgCtaInfo.item.h2", widget: "string" }
-      - { label: "3 Image CTA Content 1", name: "3ImgCtaInfo.item.p", widget: "string" }
+      - { label: "3 Image CTA Image 1", name: "3ImgCtaInfo.item[0].src", widget: "image" }
+      - { label: "3 Image CTA Alternate text 1", name: "3ImgCtaInfo.item[0].alt", widget: "string" }
+      - { label: "3 Image CTA Header 1", name: "3ImgCtaInfo.item[0].h2", widget: "string" }
+      - { label: "3 Image CTA Content 1", name: "3ImgCtaInfo.item[0].p", widget: "string" }
+      - { label: "3 Image CTA Image 2", name: "3ImgCtaInfo.item[1].src", widget: "image" }
+      - { label: "3 Image CTA Alternate text 2", name: "3ImgCtaInfo.item[1].alt", widget: "string" }
+      - { label: "3 Image CTA Header 2", name: "3ImgCtaInfo.item[1].h2", widget: "string" }
+      - { label: "3 Image CTA Content 2", name: "3ImgCtaInfo.item[1].p", widget: "string" }
+      - { label: "3 Image CTA Image 3", name: "3ImgCtaInfo.item[2].src", widget: "image" }
+      - { label: "3 Image CTA Alternate text 3", name: "3ImgCtaInfo.item[2].alt", widget: "string" }
+      - { label: "3 Image CTA Header 1", name: "3ImgCtaInfo.item[2].h2", widget: "string" }
+      - { label: "3 Image CTA Content 1", name: "3ImgCtaInfo.item[2].p", widget: "string" }
       - { label: "Card/Image Section Header", name: "cardImageSectionLeft.item.h1", widget: "string"}
       - { label: "Card/Image Section Type (img, or video)", name: "cardImageSectionLeft.item.type", widget: "string"}
       - { label: "Card/Image Section Image", name: "cardImageSectionLeft.item.src", widget: "image"}
