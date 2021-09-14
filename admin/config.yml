@@ -21,19 +21,19 @@ collections:
       - { label: "Trust Image 1", name: "trust.item.src", widget: "image" }
       - { label: "Trust Image 1 alternate text", name: "trust.item.alt", widget: "string" }
       - { label: "Trust Image 2", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 2 alternate text", name: "trust.item.alt" widget: "string" }
+      - { label: "Trust Image 2 alternate text", name: "trust.item.alt", widget: "string" }
       - { label: "Trust Image 3", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 3 alternate text", name: "trust.item.alt" widget: "string" }
+      - { label: "Trust Image 3 alternate text", name: "trust.item.alt", widget: "string" }
       - { label: "Trust Image 4", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 4 alternate text", name: "trust.item.alt" widget: "string" }
+      - { label: "Trust Image 4 alternate text", name: "trust.item.alt", widget: "string" }
       - { label: "Trust Image 5", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 5 alternate text", name: "trust.item.alt" widget: "string" }
+      - { label: "Trust Image 5 alternate text", name: "trust.item.alt", widget: "string" }
       - { label: "Trust Image 6", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 6 alternate text", name: "trust.item.alt" widget: "string" }
+      - { label: "Trust Image 6 alternate text", name: "trust.item.alt", widget: "string" }
       - { label: "Trust Image 7", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 7 alternate text", name: "trust.item.alt" widget: "string" }
+      - { label: "Trust Image 7 alternate text", name: "trust.item.alt", widget: "string" }
       - { label: "Trust Image 8", name: "trust.item.src", widget: "image" }
-      - { label: "Trust Image 8 alternate text", name: "trust.item.alt" widget: "string" }
+      - { label: "Trust Image 8 alternate text", name: "trust.item.alt", widget: "string" }
       - { label: "3 Image CTA Header", name: "3ImgCta.h1", widget: "string" }
       - { label: "3 Image CTA Button Text", name: "3ImgCta.buttonText", widget: "string" }
       - { label: "3 Image CTA Image 1", name: "3ImgCtaInfo.item.src", widget: "image" }
