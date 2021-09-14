@@ -56,6 +56,7 @@ collections:
       - {label: "Card/Image Section Card Header", name: "cardImageSectionLeft.item.h2", widget: "string"}
       - {label: "Card/Image Section Card Content", name: "cardImageSectionLeft.item.p", widget: "string"}
       - {label: "Card/Image Section Button Text", name: "cardImageSectionLeft.item.buttonText", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "posts"
     label: "Example posts"
     folder: "posts"
