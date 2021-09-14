@@ -2,7 +2,6 @@
 layout: layouts/affiliate.njk
 title: Parking | Wrapmate
 description: Get an exact price in seconds with Wrapmate.
-permalink: '/affiliate/'
 hidden: true
 navLogo:
   src: /assets/logo-white.svg
