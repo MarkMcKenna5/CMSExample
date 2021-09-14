@@ -61,6 +61,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/affiliate.njk"}
-      - {label: "Content", name: "Content", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Date", name: "date", widget: "string"}
