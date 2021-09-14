@@ -55,3 +55,11 @@ collections:
       - { label: "Card/Image Section Card Header", name: "cardImageSectionLeft.item.h2", widget: "string"}
       - { label: "Card/Image Section Card Content", name: "cardImageSectionLeft.item.p", widget: "string"}
       - { label: "Card/Image Section Button Text", name: "cardImageSectionLeft.item.buttonText", widget: "string"}
+  - name: "posts"
+    label: "Example posts"
+    folder: "posts"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/affiliate.njk" }
+      - { label: "Content", name: "Content", widget: "string" }
