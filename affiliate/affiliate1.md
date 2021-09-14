@@ -34,9 +34,9 @@ mobileNavCtaBtn:
   text: Schedule a call
 hero:
   - item:
-    src: '/assets/affiliate/parkingHero.png'
-    srcMd: '/assets/affiliate/parkingHero.png'
-    srcSm: '/assets/affiliate/parkingHero.png'
+    src: '/images/beer.jpg'
+    srcMd: '/images/beer.jpg'
+    srcSm: '/images/beer.jpg'
     heroContentClass: 'heroContentBottom'
     h1: "Turn parking into profit."
     subtitle: 'Vehicle wrap designs that elevate your business'
@@ -119,3 +119,5 @@ footer:
     guarantee: "/guarantee/"
     about: '/about/'
 ---
+
+TESTIN THE SHIT

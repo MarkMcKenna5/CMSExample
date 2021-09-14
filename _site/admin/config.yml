@@ -9,6 +9,7 @@ collections:
   - name: "affiliates"
     label: "Affiliate Company Pages"
     folder: "affiliate"
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -58,6 +59,7 @@ collections:
   - name: "posts"
     label: "Example posts"
     folder: "posts"
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
