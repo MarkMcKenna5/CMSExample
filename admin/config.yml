@@ -13,18 +13,18 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/affiliate.njk"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Hero Image Source", name: "heroSrc", widget: "image"}
-      - {label: "Hero Image Source2", name: "heroSrcMd", widget: "image", default: "/images/beer.jpg"}
-      - {label: "Hero Image Source3", name: "heroSrcSm", widget: "image", default: "/images/beer.jpg"}
-      - {label: "Hero Class", name: "heroContentClass", widget: "hidden", default: "heroContentBottom"}
-      - {label: "Hero Header", name: "heroH1", widget: "string"}
-      - {label: "Hero Subtitle", name: "heroSubtitle", widget: "string"}
-      - {label: "Hero Header class", name: "heroHeaderClass", widget: "hidden", default: "heroHeader"}
-      - {label: "Hero subtitle class", name: "heroSubtitleClass", widget: "hidden", default: "heroSubtitle"}
-      - {label: "Hero button id", name: "heroButtonId", widget: "hidden", default: "startProject"}
-      - {label: "Hero button class", name: "heroButtonClass", widget: "hidden", default: "button-primary"}
-      - {label: "Hero Button Text", name: "heroButtonText", widget: "string"}
-      - {label: "Hero button href", name: "heroButtonHref", widget: "hidden", default: "/"}
+      - {label: "Hero Image Source", name: "hero.heroSrc", widget: "image"}
+      - {label: "Hero Image Source2", name: "hero.heroSrcMd", widget: "image", default: "/images/beer.jpg"}
+      - {label: "Hero Image Source3", name: "hero.heroSrcSm", widget: "image", default: "/images/beer.jpg"}
+      - {label: "Hero Class", name: "hero.heroContentClass", widget: "hidden", default: "heroContentBottom"}
+      - {label: "Hero Header", name: "hero.heroH1", widget: "string"}
+      - {label: "Hero Subtitle", name: "hero.heroSubtitle", widget: "string"}
+      - {label: "Hero Header class", name: "hero.heroHeaderClass", widget: "hidden", default: "heroHeader"}
+      - {label: "Hero subtitle class", name: "hero.heroSubtitleClass", widget: "hidden", default: "heroSubtitle"}
+      - {label: "Hero button id", name: "hero.heroButtonId", widget: "hidden", default: "startProject"}
+      - {label: "Hero button class", name: "hero.heroButtonClass", widget: "hidden", default: "button-primary"}
+      - {label: "Hero Button Text", name: "hero.heroButtonText", widget: "string"}
+      - {label: "Hero button href", name: "hero.heroButtonHref", widget: "hidden", default: "/"}
   - name: "posts"
     label: "Example posts"
     folder: "posts"
