@@ -31,34 +31,34 @@
     </a>
   </div>
 </section>
-{% endfor %} {% else %} {%- for item in hero %}
-<picture class="hero {{ item.class }}" id="{{ item.id }}">
-  <source srcset="{{item.src}}" media="(min-width: 901px)" />
-  <source srcset="{{item.srcMd}}" media="(min-width: 641px)" />
-  <source srcset="{{item.srcSm}}" media="(min-width: 320px)" />
+{% endfor %} {% else %}
+<picture class="hero {{ class }}" id="{{ id }}">
+  <source srcset="{{heroSrc}}" media="(min-width: 901px)" />
+  <source srcset="{{heroSrcMd}}" media="(min-width: 641px)" />
+  <source srcset="{{heroSrcSm}}" media="(min-width: 320px)" />
   <img
-    src="{{ item.src }}"
+    src="{{ heroSrc }}"
     class="hero__image {{ item.heroImgClass }}"
     alt="{{ item.alt }}"
   />
-  <div class="{{ item.heroContentClass }}">
+  <div class="{{ heroContentClass }}">
     <div id="{{ item.badgeId }}"><img /></div>
-    <h1 class="{{ item.headerClass }}">
-      {{ item.h1 | safe }}
+    <h1 class="{{ heroHeaderClass }}">
+      {{ heroH1 | safe }}
     </h1>
-    <h4 class="{{ item.subtitleClass }}">
-      {{ item.subtitle | safe }}
+    <h4 class="{{ heroSubtitleClass }}">
+      {{ heroSubtitle | safe }}
     </h4>
-    {% if item.buttonId %}
+    {% if heroButtonId %}
     <a
-      id="{{ item.buttonId }}"
-      class="button {{ item.buttonClass }}"
-      href="{{ item.buttonHref }}"
+      id="{{ heroButtonId }}"
+      class="button {{ heroButtonClass }}"
+      href="{{ heroButtonHref }}"
     >
-      {{ item.buttonText }}
+      {{ heroButtonText }}
     </a>
     {% endif %}
     <p class="{{ item.disclaimerClass }}">{{ item.disclaimer }}</p>
   </div>
 </picture>
-{%- endfor %} {%- endif %}
+{%- endif %}
