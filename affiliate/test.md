@@ -1,0 +1,47 @@
+---
+title: test
+layout: layouts/affiliate.njk
+description: test
+hero.item.src: /images/uploads/download.jpg
+hero.item.h1: test
+hero.item.subtitle: test
+hero.item.buttonText: test
+trustH3: /images/uploads/download.jpg
+"trust.item[0].src": /images/uploads/download.jpg
+"trust.item[0].alt": test
+"trust.item[1].src": /images/uploads/download.jpg
+"trust.item[1].alt": test
+"trust.item[2].src": /images/uploads/download.jpg
+"trust.item[2].alt": test
+"trust.item[3].src": /images/uploads/download.jpg
+"trust.item[3].alt": test
+"trust.item[4].src": /images/uploads/download.jpg
+"trust.item[4].alt": test
+"trust.item[5].src": /images/uploads/download.jpg
+"trust.item[5].alt": test
+"trust.item[6].src": /images/uploads/download.jpg
+"trust.item[6].alt": test
+"trust.item[7].src": /images/uploads/download.jpg
+"trust.item[7].alt": test
+3ImgCta.h1: test
+3ImgCta.buttonText: test
+"3ImgCtaInfo.item[0].src": /images/uploads/download.jpg
+"3ImgCtaInfo.item[0].alt": test
+"3ImgCtaInfo.item[0].h2": test
+"3ImgCtaInfo.item[0].p": test
+"3ImgCtaInfo.item[1].src": /images/uploads/download.jpg
+"3ImgCtaInfo.item[1].alt": test
+"3ImgCtaInfo.item[1].h2": test
+"3ImgCtaInfo.item[1].p": test
+"3ImgCtaInfo.item[2].src": /images/uploads/download.jpg
+"3ImgCtaInfo.item[2].alt": test
+"3ImgCtaInfo.item[2].h2": test
+"3ImgCtaInfo.item[2].p": test
+cardImageSectionLeft.item.h1: test
+cardImageSectionLeft.item.type: test
+cardImageSectionLeft.item.src: /images/uploads/download.jpg
+cardImageSectionLeft.item.h2: test
+cardImageSectionLeft.item.p: test
+cardImageSectionLeft.item.buttonText: test
+---
+testttt
