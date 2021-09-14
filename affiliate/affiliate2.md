@@ -1,6 +1,6 @@
 ---
 layout: layouts/affiliate.njk
-title: Parking | Wrapmate
+title: affiliate 2
 description: Get an exact price in seconds with Wrapmate.
 hidden: true
 navLogo:
