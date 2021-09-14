@@ -1,6 +1,6 @@
 ---
 layout: layouts/affiliate.njk
-title: test
+title: Test
 description: test
 hero.item.heroSrc: /images/uploads/download.jpg
 hero.item.heroSrcMd: /images/beer.jpg
