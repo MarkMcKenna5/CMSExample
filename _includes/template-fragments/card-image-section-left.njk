@@ -17,25 +17,23 @@
     </div>
 </section>
 {% endmacro %}
-{% for item in cardImageSectionLeft %}
-<section id="{{ item.id }}" class="card-image-section-left {{ item.class }}">
-  <h2 class="{{item.promiseH2Class}}">{{item.promiseH2}}</h2>
-    <h1 class="title center">{{ item.h1 }}</h1>
+<section id="{{ cardImageSectionLeftId }}" class="card-image-section-left {{ class }}">
+  <h2 class="{{promiseH2Class}}">{{promiseH2}}</h2>
+    <h1 class="title center">{{ cardImageSectionLeftH1 }}</h1>
     <div class="card-image-section-left__content-container">
       <div class="card-image-section-left-image-wrapper">
-        <{{ item.type }} src="{{ item.src }}" autoplay muted loop playsinline class="price__video lazy" alt="{{ item.alt }}">
-        {% if item.videoButton %}
-        <a id="{{ item.videoButtonId }}"class="video-button-light">{{ item.videoButtonText }}</a>
+        <{{ cardImageSectionLeftType }} src="{{ cardImageSectionLeftSrc }}" autoplay muted loop playsinline class="price__video lazy" alt="{{ alt }}">
+        {% if videoButton %}
+        <a id="{{ videoButtonId }}"class="video-button-light">{{ videoButtonText }}</a>
         {% endif %}
-          <source data-src="{{ item.src }}" type="{{ item.type }}">
-        </{{ item.type }}>
+          <source data-src="{{ cardImageSectionLeftSrc }}" type="{{ cardImageSectionLeftType }}">
+        </{{ cardImageSectionLeftType }}>
       </div>
       <div class="shadow bg-white card-image-section-left-dialog">
-        <h2>{{ item.h2 | safe}}</h2>
-        <p>{{ item.p | safe }}</p>
-        <p class="sub-paragraph">{{ item.p2 }}</p>
-        <a id="{{ item.buttonId }}" class="button button-primary" href="{{item.buttonHref}}">{{ item.buttonText }}</a>
+        <h2>{{ cardImageSectionLeftH2 | safe}}</h2>
+        <p>{{ cardImageSectionLeftP | safe }}</p>
+        <p class="sub-paragraph">{{ p2 }}</p>
+        <a id="{{ cardImageSectionLeftButtonId }}" class="button button-primary" href="{{cardImageSectionLeftButtonHref}}">{{ cardImageSectionLeftButtonText }}</a>
       </div>
     </div>
 </section>
-{% endfor %}

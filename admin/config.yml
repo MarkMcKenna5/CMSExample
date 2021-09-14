@@ -13,18 +13,37 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/affiliate.njk"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Hero Image Source", name: "hero.item.heroSrc", widget: "image"}
-      - {label: "Hero Image Source2", name: "hero.item.heroSrcMd", widget: "image", default: "/images/beer.jpg"}
-      - {label: "Hero Image Source3", name: "hero.item.heroSrcSm", widget: "image", default: "/images/beer.jpg"}
-      - {label: "Hero Class", name: "hero.item.heroContentClass", widget: "hidden", default: "heroContentBottom"}
-      - {label: "Hero Header", name: "hero.item.heroH1", widget: "string"}
-      - {label: "Hero Subtitle", name: "hero.item.heroSubtitle", widget: "string"}
-      - {label: "Hero Header class", name: "hero.item.heroHeaderClass", widget: "hidden", default: "heroHeader"}
-      - {label: "Hero subtitle class", name: "hero.item.heroSubtitleClass", widget: "hidden", default: "heroSubtitle"}
-      - {label: "Hero button id", name: "hero.item.heroButtonId", widget: "hidden", default: "startProject"}
-      - {label: "Hero button class", name: "hero.item.heroButtonClass", widget: "hidden", default: "button-primary"}
-      - {label: "Hero Button Text", name: "hero.item.heroButtonText", widget: "string"}
-      - {label: "Hero button href", name: "hero.item.heroButtonHref", widget: "hidden", default: "/"}
+      - {label: "Hero Image Source", name: "heroSrc", widget: "image"}
+      - {label: "Hero Image Source2", name: "heroSrcMd", widget: "image", default: "/images/beer.jpg"}
+      - {label: "Hero Image Source3", name: "heroSrcSm", widget: "image", default: "/images/beer.jpg"}
+      - {label: "Hero Class", name: "heroContentClass", widget: "hidden", default: "heroContentBottom"}
+      - {label: "Hero Header", name: "heroH1", widget: "string"}
+      - {label: "Hero Subtitle", name: "heroSubtitle", widget: "string"}
+      - {label: "Hero Header class", name: "heroHeaderClass", widget: "hidden", default: "heroHeader"}
+      - {label: "Hero subtitle class", name: "heroSubtitleClass", widget: "hidden", default: "heroSubtitle"}
+      - {label: "Hero button id", name: "heroButtonId", widget: "hidden", default: "startProject"}
+      - {label: "Hero button class", name: "heroButtonClass", widget: "hidden", default: "button-primary"}
+      - {label: "Hero Button Text", name: "heroButtonText", widget: "string"}
+      - {label: "Hero button href", name: "heroButtonHref", widget: "hidden", default: "/"}
+      - {label: "Card/Image Section id", name: "cardImageSectionLeftId", widget: "hidden", default: "wee"}
+      - {label: "Card/Image Section Header", name: "cardImageSectionLeftH1", widget: "string"}
+      - {label: "Card/Image Section Type (img, or video)", name: "cardImageSectionLeftType", widget: "string"}
+      - {label: "Card/Image Section Image", name: "cardImageSectionLeftSrc", widget: "image"}
+      - {label: "Card/Image Section Card alt", name: "cardImageSectionLeftAlt", widget: "string"}
+      - {label: "Card/Image Section Card Header", name: "cardImageSectionLeftH2", widget: "string"}
+      - {label: "Card/Image Section Card Content", name: "cardImageSectionLeftP", widget: "string"}
+      - {label: "Card/Image Section Button id", name: "cardImageSectionLeftButtonId", widget: "hidden", default: "weee"}
+      - {label: "Card/Image Section Button Text", name: "cardImageSectionLeftButtonText", widget: "string"}
+      - {label: "Card/Image Section Button href", name: "cardImageSectionLeftButtonHref", widget: "hidden", default: "/"}
+      - {label: "footer href1", name: "footerLogo", widget: "hidden", default: "wee"}
+      - {label: "footer href2", name: "footerPro", widget: "hidden", default: "/"}
+      - {label: "footer href3", name: "footerProSignUp", widget: "hidden", default: "/"}
+      - {label: "footer href4", name: "footerTos", widget: "hidden", default: "/"}
+      - {label: "footer href5", name: "footerLocations", widget: "hidden", default: "/"}
+      - {label: "footer href6", name: "footerHowItWorks", widget: "hidden", default: "/"}
+      - {label: "footer href7", name: "footerDesign", widget: "hidden", default: "/"}
+      - {label: "footer href8", name: "footerGuarantee", widget: "hidden", default: "/"}
+      - {label: "footer href9", name: "footerAbout", widget: "hidden", default: "/"}
   - name: "posts"
     label: "Example posts"
     folder: "posts"
