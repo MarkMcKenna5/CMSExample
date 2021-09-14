@@ -9,6 +9,7 @@ collections:
   - name: "affiliates"
     label: "Affiliate Company Pages"
     folder: "affiliate"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/affiliate.njk" }
