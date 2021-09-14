@@ -38,7 +38,7 @@ collections:
       - {label: "Hero Class", name: "hero.item.heroContentClass", widget: "hidden", default: "heroContentBottom"}
       - {label: "Hero Header", name: "hero.item.h1", widget: "string"}
       - {label: "Hero Subtitle", name: "hero.item.subtitle", widget: "string"}
-      - {label: "Hero Header class", name: "hero.item.headerClass", widget: "hideen", default: "heroHeader"}
+      - {label: "Hero Header class", name: "hero.item.headerClass", widget: "hidden", default: "heroHeader"}
       - {label: "Hero subtitle class", name: "hero.item.subtitleClass", widget: "hidden", default: "heroSubtitle"}
       - {label: "Hero button id", name: "hero.item.buttonId", widget: "hidden", default: "startProject"}
       - {label: "Hero button class", name: "hero.item.buttonClass", widget: "hidden", default: "button-primary"}
